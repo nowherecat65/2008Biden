@@ -926,7 +926,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Arizona",
             "abbr": "AZ",
-            "electoral_votes": 8,
+            "electoral_votes": 10,
             "popular_votes": 1534113,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -952,7 +952,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "California",
             "abbr": "CA",
-            "electoral_votes": 54,
+            "electoral_votes": 55,
             "popular_votes": 10965856,
             "poll_closing_time": 300,
             "winner_take_all_flg": 1,
@@ -965,7 +965,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Colorado",
             "abbr": "CO",
-            "electoral_votes": 8,
+            "electoral_votes": 9,
             "popular_votes": 1741365,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -978,7 +978,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Connecticut",
             "abbr": "CT",
-            "electoral_votes": 8,
+            "electoral_votes": 7,
             "popular_votes": 1459525,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -1004,7 +1004,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Florida",
             "abbr": "FL",
-            "electoral_votes": 25,
+            "electoral_votes": 27,
             "popular_votes": 6963110,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -1017,7 +1017,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Georgia",
             "abbr": "GA",
-            "electoral_votes": 13,
+            "electoral_votes": 15,
             "popular_votes": 2596804,
             "poll_closing_time": 60,
             "winner_take_all_flg": 1,
@@ -1056,7 +1056,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Illinois",
             "abbr": "IL",
-            "electoral_votes": 22,
+            "electoral_votes": 21,
             "popular_votes": 4742123,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -1069,7 +1069,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Indiana",
             "abbr": "IN",
-            "electoral_votes": 12,
+            "electoral_votes": 11,
             "popular_votes": 2199302,
             "poll_closing_time": 0,
             "winner_take_all_flg": 1,
@@ -1173,7 +1173,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Michigan",
             "abbr": "MI",
-            "electoral_votes": 18,
+            "electoral_votes": 17,
             "popular_votes": 4232711,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1199,7 +1199,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Mississippi",
             "abbr": "MS",
-            "electoral_votes": 7,
+            "electoral_votes": 6,
             "popular_votes": 994926,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -1251,7 +1251,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Nevada",
             "abbr": "NV",
-            "electoral_votes": 4,
+            "electoral_votes": 5,
             "popular_votes": 608970,
             "poll_closing_time": 240,
             "winner_take_all_flg": 1,
@@ -1303,7 +1303,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "New York",
             "abbr": "NY",
-            "electoral_votes": 33,
+            "electoral_votes": 31,
             "popular_votes": 6831178,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1316,7 +1316,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "North Carolina",
             "abbr": "NC",
-            "electoral_votes": 14,
+            "electoral_votes": 15,
             "popular_votes": 2911262,
             "poll_closing_time": 90,
             "winner_take_all_flg": 1,
@@ -1342,7 +1342,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Ohio",
             "abbr": "OH",
-            "electoral_votes": 21,
+            "electoral_votes": 20,
             "popular_votes": 4705457,
             "poll_closing_time": 90,
             "winner_take_all_flg": 1,
@@ -1355,7 +1355,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Oklahoma",
             "abbr": "OK",
-            "electoral_votes": 8,
+            "electoral_votes": 7,
             "popular_votes": 1234229,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -1381,7 +1381,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Pennsylvania",
             "abbr": "PA",
-            "electoral_votes": 23,
+            "electoral_votes": 21,
             "popular_votes": 4913119,
             "poll_closing_time": 120,
             "winner_take_all_flg": 1,
@@ -1446,7 +1446,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Texas",
             "abbr": "TX",
-            "electoral_votes": 32,
+            "electoral_votes": 34,
             "popular_votes": 6407637,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
@@ -1537,7 +1537,7 @@ campaignTrail_temp.states_json = [
         "fields": {
             "name": "Wisconsin",
             "abbr": "WI",
-            "electoral_votes": 11,
+            "electoral_votes": 10,
             "popular_votes": 2598607,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
