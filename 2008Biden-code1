@@ -47,29 +47,6 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 77,
         "fields": {
-            "first_name": "Joe",
-            "last_name": "Biden",
-            "election": 9,
-            "party": "Democrat",
-            "state": "Delaware",
-            "priority": 1,
-            "description": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“Failure at some point in your life is inevitable, but giving up is unforgivable.”</blockquote></p><p>Diamond Joe is not the boy wonder he was when he entered the Senate over 30 years ago. With over 6 terms as a senator, he has built quite an impressive resume, penning the 1994 Clinton crime bill while chairing the Senate Judiciary and Foreign Relations committees in that order.</p><p>Biden desperately needs this campaign to work. However, with Joe in his late 60s and him constantly getting his foot stuck in his mouth, along with him facing popular senator and first lady Hillary Clinton in the Democratic primaries, means it might take only one mistake for his campaign to blow up in his face.",
-            "color_hex": "#2d78a0",
-            "secondary_color_hex": "#FFA0A0",
-            "is_active": 1,
-            "image_url": "https://paul-david-wellstone.neocities.org/newbiden08image.png",
-            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Confounding the predictions of many experts, you were able to turn the tables on Al Gore, in spite of the economy and Clinton's popularity.</p><p>On the political front, you can push for tax cuts to spur the economy and return the budget surplus to the American people. You might also pursue education and immigration reform, individual Social Security accounts, and new laws to defend the family and the sanctity of life.</p>",
-            "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Perhaps it was always a long-shot, with the Democrats in such a commanding position after eight years of Bill Clinton. In any case, at least you are still the Governor of Texas.</p><p>Expect Al Gore to unleash a new round of government programs and environmental regulations. You are still youngish, however. If the election was close this time, perhaps you can run again in 2004, or work on behalf your brother Jeb.</p>",
-            "no_electoral_majority_message": "<h3>Wow! You have won in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, marking the first time this has happened since 1824. Fortunately for you, the majority of U.S. states have Republican controlled congressional delegations, and they will cast their votes accordingly.</p><p>Given the incredibly close nature of the election, you will surely be expected to govern as a moderate, conciliatory President. Right??</p>",
-            "description_as_running_mate": "''",
-            "candidate_score": 1,
-            "running_mate": false
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
-        "pk": 78,
-        "fields": {
             "first_name": "John",
             "last_name": "McCain",
             "election": 9,
@@ -84,6 +61,29 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Though it was perhaps expected, you could have easily faltered at a number of points. Credit to you for pulling through.</p><p>On the political front, you can continue the Clinton legacy and strengthen Social Security for generations to come. Perhaps you can succeed on health care where Clinton came up short? Or maybe you can create a future of renewable energy for America. Just be wary of a (George or Jeb?) Bush challenge in 2004.</p>",
             "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Surely the second-guessing will be intense, but if things were close you could probably run again in 2004.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner. A lot should depend on the margin of his victory, and whether it was large or small.</p>",
             "no_electoral_majority_message": "<h3>Sorry! You have lost in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, for the first time since 1824. Unfortunately for you, a majority of states have Republican controlled congressional delegations.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner.</p>",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 78,
+        "fields": {
+            "first_name": "Joe",
+            "last_name": "Biden",
+            "election": 9,
+            "party": "Democrat",
+            "state": "Delaware",
+            "priority": 1,
+            "description": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“Failure at some point in your life is inevitable, but giving up is unforgivable.”</blockquote></p><p>Diamond Joe is not the boy wonder he was when he entered the Senate over 30 years ago. With over 6 terms as a senator, he has built quite an impressive resume, penning the 1994 Clinton crime bill while chairing the Senate Judiciary and Foreign Relations committees in that order.</p><p>Biden desperately needs this campaign to work. However, with Joe in his late 60s and him constantly getting his foot stuck in his mouth, along with him facing popular senator and first lady Hillary Clinton in the Democratic primaries, means it might take only one mistake for his campaign to blow up in his face.",
+            "color_hex": "#2d78a0",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 1,
+            "image_url": "https://paul-david-wellstone.neocities.org/newbiden08image.png",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Confounding the predictions of many experts, you were able to turn the tables on Al Gore, in spite of the economy and Clinton's popularity.</p><p>On the political front, you can push for tax cuts to spur the economy and return the budget surplus to the American people. You might also pursue education and immigration reform, individual Social Security accounts, and new laws to defend the family and the sanctity of life.</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Perhaps it was always a long-shot, with the Democrats in such a commanding position after eight years of Bill Clinton. In any case, at least you are still the Governor of Texas.</p><p>Expect Al Gore to unleash a new round of government programs and environmental regulations. You are still youngish, however. If the election was close this time, perhaps you can run again in 2004, or work on behalf your brother Jeb.</p>",
+            "no_electoral_majority_message": "<h3>Wow! You have won in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, marking the first time this has happened since 1824. Fortunately for you, the majority of U.S. states have Republican controlled congressional delegations, and they will cast their votes accordingly.</p><p>Given the incredibly close nature of the election, you will surely be expected to govern as a moderate, conciliatory President. Right??</p>",
             "description_as_running_mate": "''",
             "candidate_score": 1,
             "running_mate": false
@@ -388,7 +388,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 48,
         "fields": {
-            "candidate": 77,
+            "candidate": 78,
             "running_mate": 81
         }
     },
@@ -396,7 +396,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 52,
         "fields": {
-            "candidate": 78,
+            "candidate": 77,
             "running_mate": 85
         }
     },
@@ -404,7 +404,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 53,
         "fields": {
-            "candidate": 78,
+            "candidate": 77,
             "running_mate": 86
         }
     },
@@ -412,7 +412,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 49,
         "fields": {
-            "candidate": 77,
+            "candidate": 78,
             "running_mate": 82
         }
     },
@@ -420,7 +420,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 54,
         "fields": {
-            "candidate": 78,
+            "candidate": 77,
             "running_mate": 87
         }
     },
@@ -428,7 +428,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 55,
         "fields": {
-            "candidate": 78,
+            "candidate": 77,
             "running_mate": 88
         }
     },
@@ -436,7 +436,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 50,
         "fields": {
-            "candidate": 77,
+            "candidate": 78,
             "running_mate": 83
         }
     },
@@ -444,7 +444,7 @@ campaignTrail_temp.running_mate_json = [
         "model": "campaign_trail.running_mate",
         "pk": 51,
         "fields": {
-            "candidate": 77,
+            "candidate": 78,
             "running_mate": 84
         }
     }
@@ -453,7 +453,7 @@ campaignTrail_temp.running_mate_json = [
 campaignTrail_temp.credits = "<button onclick='credits()'>Ryker & Others</button>"
 
 credits = function() {
-credits = [ "Lead Developer:", "Ryker", " ", "Coders:", "Paul David Wellstone", "StrawberryMaster", " ", "Writers:", "ThatQuayleSimp", "PingPongProductions", "Junior", "Person", " ", "Editor:", "TaviTales", " ", "Version:", "Indev",]
+credits = [ "Lead Developer:", "Ryker", " ", "Coders:", "Paul David Wellstone", "StrawberryMaster", " ", "Writers:", "ThatQuayleSimp", "theanswerisme", "PingPongProductions", "Junior", "Person", " ", "Editor:", "TaviTales", " ", "Version:", "Indev",]
 text = "CREDITS AND GAME VERSION:\n\n"
 for (i in credits) {
     text += credits[i] + "\n"
@@ -562,6 +562,50 @@ document.styleSheets[0].insertRule(" select, button {border-style: solid!importa
 document.styleSheets[0].insertRule("#game_window{ height:41em !important;}", 0);
 document.styleSheets[0].insertRule("#main_content_area { height:81% !important;}", 0);
 document.styleSheets[0].insertRule(".inner_window_question{ margin:0.25em 0.25em 0.75em !important;}", 0);
+
+document.head.innerHTML += `<link
+	rel="stylesheet"
+	href="https://unpkg.com/7.css"
+>`
+
+document.head.innerHTML += `<style>
+	h3 {
+		font-size:1.17em!important;
+	}
+	body {display:flex!important;}
+	#game_window{max-width:1000px;}
+</style>`
+
+function addDynamicCSS() {
+	var css = `
+		#final_results_description h3 {
+			color: white;
+		}
+		#overall_details_container h3 {
+			color: white;
+		}
+		#overall_election_details h4 {
+			color: white;
+		}
+		#main_content_area_reading p {
+			color: white;
+		}
+		#main_content_area_reading h3.results_tab_header {
+			color: white;
+		}
+		.inner_window_w_desc h3 {
+			color: white;
+		}
+	`;
+	var styleElem = document.createElement('style');
+	styleElem.type = 'text/css';
+
+	styleElem.appendChild(document.createTextNode(css));
+
+	document.head.appendChild(styleElem);
+}
+
+addDynamicCSS();
 
 
 //#endcode
