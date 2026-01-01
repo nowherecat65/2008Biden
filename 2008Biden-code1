@@ -153,7 +153,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“I’m not going to be somebody’s punching bag.”</blockquote><p>Riding the wave of dissatisfaction against Bush, Tim Kaine was able to win his state governorship in 2005. And has since then governed as a pragmatic moderate, while his honorable response to the Virginia Tech shooting has grown his national profile.</p><p>Kaine would be a fine choice for VP. His fluency in Spanish could help in the southwest, while his inclusion on the ticket should be enough to shift Virginia to the Democrats. However, Kaine is not a very captivating speaker, and the parties' left flank may not react to his choice very well.</p>",
+            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“I’m not going to be somebody’s punching bag.”</blockquote><p>Riding the wave of dissatisfaction against Bush, Tim Kaine was able to win his state governorship in 2005, and has since then governed as a pragmatic moderate, while his honorable response to the Virginia Tech shooting has grown his national profile.</p><p>Kaine would be a fine choice for VP. His fluency in Spanish could help in the southwest, while his inclusion on the ticket should be enough to shift Virginia to the Democrats. However, Kaine is not a very captivating speaker, and the party's left flank may not react to his choice very well.</p>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -176,7 +176,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“As Indiana’s governor, I balanced eight budgets, never raised taxes, and left the largest surplus in state history”</blockquote></p><p>Unlike his progressive father, Birch Bayh, Senator Evan Bayh has become the de facto leader of the ‘blue dogs’, cosponsoring the Iraq war resolution and supporting much of the Bush administration's policies in Iraq while chairing various centrist Democratic organizations like the Democratic Leadership Council.</p><p>Choosing Bayh would ideologically enforce you as a more moderate democrat, and his personal popularity could be enough to make the Hoosier state competitive. However, his hawkish policy for Iraq clashes with your policy, and his choice would definitely anger the parties left flank.</p>",
+            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“As Indiana’s governor, I balanced eight budgets, never raised taxes, and left the largest surplus in state history”</blockquote></p><p>Unlike his progressive father, Birch Bayh, Senator Evan Bayh has become the de facto leader of the ''Blue Dogs'', cosponsoring the Iraq War resolution and supporting much of the Bush administration's policies in Iraq while chairing various centrist Democratic organizations like the Democratic Leadership Council.</p><p>Choosing Bayh would reinforce you ideologically as a more moderate Democrat, and his personal popularity could be enough to make the Hoosier State competitive. However, his hawkish policy on Iraq clashes with your policy, and his choice would definitely anger the party's left flank.</p>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -199,7 +199,7 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“There is not a liberal America and a conservative America - there is the United States of America. There is not a Black America and a white America and Latino America and Asian America - there's the United States of America.”</blockquote></p><p>Barry is a junior Senator representing Illinois, he's been seen as a rising star within the party ever since his speech at the 2004 DNC.</p><p>Despite not having a lot of governmental experience, he could prove invaluable on your ticket for a bunch of reasons: Barry would galvanize the black vote in your favor, his charisma, and probably the most beneficial thing about him is that he is the perfect balance between the moderate and left wings of the party; he'll satisfy the leftists without scaring off moderates.</p><p>Though, just be careful not to rely on him too much as his likeability can probably overshadow your presence on the ticket...</p>",
+            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“There is not a liberal America and a conservative America - there is the United States of America. There is not a Black America and a white America and Latino America and Asian America - there's the United States of America.”</blockquote></p><p>Barry is a junior Senator representing Illinois, he's been seen as a rising star within the party ever since his speech at the 2004 DNC.</p><p>Despite not having a lot of governmental experience, he could prove invaluable on your ticket. Barry would galvanize the black vote in your favor, and his charisma is an asset. Most beneficial of all, he’s the perfect balance between the moderate and left wings of the party; he’ll satisfy the leftists without scaring off moderates. Though, be careful not to rely on him too much, as his likeability could overshadow your presence on the ticket...</p>",
             "candidate_score": 0,
             "running_mate": true
         }
@@ -208,21 +208,21 @@ campaignTrail_temp.candidate_json = [
         "model": "campaign_trail.candidate",
         "pk": 84,
         "fields": {
-            "first_name": "Colin",
-            "last_name": "Powell",
+            "first_name": "Kathleen",
+            "last_name": "Sebelius",
             "election": 9,
-            "party": "Republican",
-            "state": "Virginia",
+            "party": "Democrat",
+            "state": "Kansas",
             "priority": 8,
             "description": "''",
-            "color_hex": "#FF0000",
-            "secondary_color_hex": "#FFA0A0",
+            "color_hex": "#2d78a0",
+            "secondary_color_hex": "#81aec6",
             "is_active": 0,
-            "image_url": "https://www.jetsimon.com/public/static/images/colin-powell-2000.jpg",
+            "image_url": "https://i.postimg.cc/3r1MZzHt/kathleensebiden2008.png",
             "electoral_victory_message": "''",
             "electoral_loss_message": "''",
             "no_electoral_majority_message": "''",
-            "description_as_running_mate": "<p>Colin Powell is a moderate Republican and a key general from the Desert Storm campaign. He enjoys high personal popularity among the American electorate. He would be the first African-American to be a running mate for a major party. It will take some strong inducements to get Powell to run, however. He has repeatedly stated that he is not seeking the role, but perhaps you could persuade him by taking a moderate position on the social issues of the day.</p>",
+            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“The essence of good government is trust.”</blockquote></p><p>Kathleen is a bipartisan gal from the (admittedly boring) state of Kansas. She's the Governor of that state, and her father held the office before her. Despite it being a Republican heartland, she, as a Democrat, has run a fairly popular administration there.</p><p>Selecting her as your VP would energize women and possibly moderates in your favor. She has bipartisan credentials while holding liberal positions on some issues that could help you mend fences with the left wing. She will definitely improve your polling in the Plains States, however, barring any miracles, Kansas is universally not expected to be competitive even with Kathleen on the ticket.</p>",
             "candidate_score": 0,
             "running_mate": true
         }
