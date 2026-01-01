@@ -29,7 +29,7 @@ campaignTrail_temp.election_json = [
         "pk": 9,
         "fields": {
             "year": 2000,
-            "summary": "<p>8 turbulent years under George W. Bush has left America polarized, as issues such as the Iraq War and the economy loom over the 2008 presidential election.</p><ul><li>Joe Biden represents the ideological center of the Democratic Party and hopes to win by attacking his other opponents in the primaries and offering change from Bush.</li><p><li>John McCain must differentiate himself from a slate of conservative challengers while making his maverick positions seem palatable to most G.O.P voters.</li></ul></p>",
+            "summary": "<p>8 turbulent years under George W. Bush have left America polarized, as issues such as the Iraq War and the staggering economy ominously loom over the 2008 presidential election while the Democrats seem poised to take back the White House.</p><ul><li>Joseph R. Biden represents the ideological center, and foreign policy conscious of the Democratic Party, and hopes to win by attacking his other opponents in the primaries and offering change from the unpopular Bush.</li><p><li>John S. McCain must differentiate himself from a slate of conservative challengers while making sure his maverick positions seem palatable to most GOP voters and to emphasize that he is different from the current President.</li></ul></p>",
             "image_url": "https://paul-david-wellstone.neocities.org/bidone.png",
             "winning_electoral_vote_number": 270,
             "advisor_url": "https://www.jetsimon.com/public/static/images/rove-brazile.jpg",
