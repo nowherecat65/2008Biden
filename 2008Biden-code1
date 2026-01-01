@@ -1,0 +1,567 @@
+campaignTrail_temp.global_parameter_json = [
+    {
+        "model": "campaign_trail.global_parameter",
+        "pk": 1,
+        "fields": {
+            "vote_variable": 1.125,
+            "max_swing": 0.12,
+            "start_point": 0.94,
+            "candidate_issue_weight": 10,
+            "running_mate_issue_weight": 3,
+            "issue_stance_1_max": -0.71,
+            "issue_stance_2_max": -0.3,
+            "issue_stance_3_max": -0.125,
+            "issue_stance_4_max": 0.125,
+            "issue_stance_5_max": 0.3,
+            "issue_stance_6_max": 0.71,
+            "global_variance": 0.01,
+            "state_variance": 0.005,
+            "question_count": 25,
+            "default_map_color_hex": "#C9C9C9",
+            "no_state_map_color_hex": "#999999"
+        }
+    }
+]
+
+campaignTrail_temp.election_json = [
+    {
+        "model": "campaign_trail.election",
+        "pk": 9,
+        "fields": {
+            "year": 2000,
+            "summary": "<p>8 turbulent years under George W. Bush has left America polarized, as issues such as the Iraq War and the economy loom over the 2008 presidential election.</p><ul><li>Joe Biden represents the ideological center of the Democratic Party and hopes to win by attacking his other opponents in the primaries and offering change from Bush.</li><p><li>John McCain must differentiate himself from a slate of conservative challengers while making his maverick positions seem palatable to most G.O.P voters.</li></ul></p>",
+            "image_url": "https://paul-david-wellstone.neocities.org/bidone.png",
+            "winning_electoral_vote_number": 270,
+            "advisor_url": "https://www.jetsimon.com/public/static/images/rove-brazile.jpg",
+            "recommended_reading": "<h4 style=\"margin-top: 0.5em;\">The Florida Recount / 2000 Election</h4><a href=\"http://www.amazon.com/exec/obidos/ASIN/B000RH0DVM/amhius20-20\" target=”_blank”>Jeffrey Toobin - Too Close to Call: The Thirty-Six-Day Battle to Decide the 2000 Election</a></br><a href=\"http://www.amazon.com/exec/obidos/ASIN/B00EMLDHFI/amhius20-20\" target=”_blank”>Andrew E. Busch & James W. Ceaser - The Perfect Tie: The True Story of the 2000 Presidential Election</a></br><a href=\"http://www.amazon.com/exec/obidos/ASIN/032110028X/amhius20-20\" target=”_blank”>Larry Sabato - Overtime! The Election 2000 Thriller</a><h4>Books by the Candidates</h4><a href=\"http://www.amazon.com/exec/obidos/ASIN/B000C4SV2I/amhius20-20\" target=”_blank”>George W. Bush - A Charge to Keep: My Journey to the White House</a></br><a href=\"http://www.amazon.com/exec/obidos/ASIN/0452269350/amhius20-20\" target=”_blank”>Al Gore - Earth in the Balance</a></br><a href=\"http://www.amazon.com/exec/obidos/ASIN/B003YFIYWY/amhius20-20\" target=”_blank”>The Ralph Nader Reader</a><h4>Links</h4><a href=\"http://www.digitalhistory.uh.edu/disp_textbook.cfm?smtID=2&psid=3377\" target=”_blank”>Digital History - The Disputed Election of 2000</a></br><a href=\"http://www.pbs.org/wnet/supremecourt/future/landmark_bush.html\" target=”_blank”><em>Bush v. Gore</em></a></br><a href=\"http://www.vanityfair.com/news/2004/10/florida-election-2000\" target=”_blank”>The Path to Florida</a></br><a href=\"http://www.historyplace.com/speeches/gore-concedes.htm\" target=”_blank”>Al Gore Concedes the 2000 Election</a>",
+            "has_visits": 1,
+            "no_electoral_majority_image": "https://www.jetsimon.com/public/static/images/2012-no-majority.jpg",
+            "creator": "Dan Bryan",
+            "display_year": "Biden '08"
+        }
+    }
+]
+
+campaignTrail_temp.candidate_json = [
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 77,
+        "fields": {
+            "first_name": "Joe",
+            "last_name": "Biden",
+            "election": 9,
+            "party": "Democrat",
+            "state": "Delaware",
+            "priority": 1,
+            "description": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“Failure at some point in your life is inevitable, but giving up is unforgivable.”</blockquote></p><p>Diamond Joe is not the boy wonder he was when he entered the Senate over 30 years ago. With over 6 terms as a senator, he has built quite an impressive resume, penning the 1994 Clinton crime bill while chairing the Senate Judiciary and Foreign Relations committees in that order.</p><p>Biden desperately needs this campaign to work. However, with Joe in his late 60s and him constantly getting his foot stuck in his mouth, along with him facing popular senator and first lady Hillary Clinton in the Democratic primaries, means it might take only one mistake for his campaign to blow up in his face.",
+            "color_hex": "#2d78a0",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 1,
+            "image_url": "https://paul-david-wellstone.neocities.org/newbiden08image.png",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Confounding the predictions of many experts, you were able to turn the tables on Al Gore, in spite of the economy and Clinton's popularity.</p><p>On the political front, you can push for tax cuts to spur the economy and return the budget surplus to the American people. You might also pursue education and immigration reform, individual Social Security accounts, and new laws to defend the family and the sanctity of life.</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Perhaps it was always a long-shot, with the Democrats in such a commanding position after eight years of Bill Clinton. In any case, at least you are still the Governor of Texas.</p><p>Expect Al Gore to unleash a new round of government programs and environmental regulations. You are still youngish, however. If the election was close this time, perhaps you can run again in 2004, or work on behalf your brother Jeb.</p>",
+            "no_electoral_majority_message": "<h3>Wow! You have won in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, marking the first time this has happened since 1824. Fortunately for you, the majority of U.S. states have Republican controlled congressional delegations, and they will cast their votes accordingly.</p><p>Given the incredibly close nature of the election, you will surely be expected to govern as a moderate, conciliatory President. Right??</p>",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 78,
+        "fields": {
+            "first_name": "John",
+            "last_name": "McCain",
+            "election": 9,
+            "party": "Republican",
+            "state": "Arizona",
+            "priority": 2,
+            "description": "<p>Al Gore enters the 2000 election as the Democratic candidate after eight years as Vice President under Bill Clinton.</p><p>Gore has a lot of options in his campaign. He can embrace the legacy of Clinton, for better or worse. Politically, he can run as a centrist, or move to the left and run as a more traditional liberal Democrat than Clinton did. The presence of the well-known Ralph Nader as a Green Party candidate complicates this decision. Gore is essentially campaigning on two fronts.</p>",
+            "color_hex": "#cb3536",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/al-gore-2000.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Though it was perhaps expected, you could have easily faltered at a number of points. Credit to you for pulling through.</p><p>On the political front, you can continue the Clinton legacy and strengthen Social Security for generations to come. Perhaps you can succeed on health care where Clinton came up short? Or maybe you can create a future of renewable energy for America. Just be wary of a (George or Jeb?) Bush challenge in 2004.</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Surely the second-guessing will be intense, but if things were close you could probably run again in 2004.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner. A lot should depend on the margin of his victory, and whether it was large or small.</p>",
+            "no_electoral_majority_message": "<h3>Sorry! You have lost in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, for the first time since 1824. Unfortunately for you, a majority of states have Republican controlled congressional delegations.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner.</p>",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 79,
+        "fields": {
+            "first_name": "Ralph",
+            "last_name": "Nader",
+            "election": 9,
+            "party": "Green",
+            "state": "Connecticut",
+            "priority": 3,
+            "description": "<p>Ralph Nader enters the 2000 election as the Green candidate after years as an activist and consumer advocate.</p><p>After eight years of Bill Clinton, it is clear that the United States needs a true liberal alternative -- one that will fight for fair trade, universal health care, free college, and campaign finance reform. Nader's primary goal in this election is to win 5% of the popular vote, which will qualify the Green Party for federal matching funds in 2004.</p>",
+            "color_hex": "#00C100",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 1,
+            "image_url": "https://www.jetsimon.com/public/static/images/ralph-nader-2000.jpg",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>This was definitely not supposed to happen. Good luck!</p>",
+            "electoral_loss_message": "<h3>As expected, you have lost the 2000 election.</h3><p>The legacy of this campaign depends on a couple of factors. First of all, did you receive 5% of the popular vote? If so, congratulations! You will enable the Green Party to run a vigorous campaign in 2004 and present a true choice to the American people. Also, the Democrats were a little peeved that you \"stole\" votes from them in this election. Hopefully that doesn't lead to a backlash.</p>",
+            "no_electoral_majority_message": "<h3>Wow! No candidate received 270 electoral votes, but the House will elect George W. Bush as President.</h3><p>Did you receive 5% of the popular vote? If so, congratulations! You will enable the Green Party to run a vigorous campaign in 2004 and present a true choice to the American people. Also, the Democrats were a little peeved that you \"stole\" votes from them in this election. Hopefully that doesn't lead to a backlash, especially since they will lose the vote in the House.</p>",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 80,
+        "fields": {
+            "first_name": "Pat",
+            "last_name": "Buchanan",
+            "election": 9,
+            "party": "Reform",
+            "state": "Virginia",
+            "priority": 4,
+            "description": "''",
+            "color_hex": "#FFFF00",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "''",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 81,
+        "fields": {
+            "first_name": "Tim",
+            "last_name": "Kaine",
+            "election": 9,
+            "party": "Democrat",
+            "state": "Virgina",
+            "priority": 5,
+            "description": "''",
+            "color_hex": "#2d78a0",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://paul-david-wellstone.neocities.org/newnewbiden08image.png",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“I’m not going to be somebody’s punching bag.”</blockquote><p>Riding the wave of dissatisfaction against Bush, Tim Kaine was able to win his state governorship in 2005. And has since then governed as a pragmatic moderate, while his honorable response to the Virginia Tech shooting has grown his national profile.</p><p>Kaine would be a fine choice for VP. His fluency in Spanish could help in the southwest, while his inclusion on the ticket should be enough to shift Virginia to the Democrats. However, Kaine is not a very captivating speaker, and the parties' left flank may not react to his choice very well.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 82,
+        "fields": {
+            "first_name": "Evan",
+            "last_name": "Bayh",
+            "election": 9,
+            "party": "Democrat",
+            "state": "Indianna",
+            "priority": 6,
+            "description": "''",
+            "color_hex": "#2d78a0",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://paul-david-wellstone.neocities.org/newnewnewbiden08image.png",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p><blockquote style='border-style: solid!important; border-width: .1em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#a9b6cb!important;margin: px 5px; padding: 2.5px; background: linear-gradient( 135deg, #FFFFFF, #f2f6ff )!important; font-style: italic; font-size: 12px;'>“As Indiana’s governor, I balanced eight budgets, never raised taxes, and left the largest surplus in state history”</blockquote></p><p>Unlike his progressive father, Birch Bayh, Senator Evan Bayh has become the de facto leader of the ‘blue dogs’, cosponsoring the Iraq war resolution and supporting much of the Bush administration's policies in Iraq while chairing various centrist Democratic organizations like the Democratic Leadership Council.</p><p>Choosing Bayh would ideologically enforce you as a more moderate democrat, and his personal popularity could be enough to make the Hoosier state competitive. However, his hawkish policy for Iraq clashes with your policy, and his choice would definitely anger the parties left flank.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 83,
+        "fields": {
+            "first_name": "Tom",
+            "last_name": "Ridge",
+            "election": 9,
+            "party": "Republican",
+            "state": "Pennsylvania",
+            "priority": 7,
+            "description": "''",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/tom-ridge-2000.jpg",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p>Tom Ridge is the popular Governor of a large swing state. Pennsylvania's 23 electoral votes would almost ensure a Bush victory if Ridge could deliver them. He has a reputation as an able administrator and has been very tough on crime. However, he has also been pro-choice for his entire career, and his selection as running mate could cause issues with the Republican base in other regions.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 84,
+        "fields": {
+            "first_name": "Colin",
+            "last_name": "Powell",
+            "election": 9,
+            "party": "Republican",
+            "state": "Virginia",
+            "priority": 8,
+            "description": "''",
+            "color_hex": "#FF0000",
+            "secondary_color_hex": "#FFA0A0",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/colin-powell-2000.jpg",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p>Colin Powell is a moderate Republican and a key general from the Desert Storm campaign. He enjoys high personal popularity among the American electorate. He would be the first African-American to be a running mate for a major party. It will take some strong inducements to get Powell to run, however. He has repeatedly stated that he is not seeking the role, but perhaps you could persuade him by taking a moderate position on the social issues of the day.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 85,
+        "fields": {
+            "first_name": "Joe",
+            "last_name": "Lieberman",
+            "election": 9,
+            "party": "Democrat",
+            "state": "Connecticut",
+            "priority": 9,
+            "description": "''",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/joe-lieberman-2000.jpg",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p>Joe Lieberman is a moderate Democrat and Orthodox Jew who has served as a Senator from Connecticut. He would be the first Jewish candidate or running mate from a major party. He was also a prominent critic of Bill Clinton's missteps during his time in the White House. Geographically, Lieberman could help with Gore's vote total in the critical state of Florida.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 86,
+        "fields": {
+            "first_name": "Bob",
+            "last_name": "Graham",
+            "election": 9,
+            "party": "Democrat",
+            "state": "Florida",
+            "priority": 10,
+            "description": "''",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/bob-graham-2000.jpg",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p>Bob Graham is a Senator and former Governor from Florida. His popularity in that state could be crucial to a Democratic victory in 2000. He is fairly moderate and was one of Bill Clinton's top choices for running mate before Clinton went with Gore. His focus has been on the environment, education, and intelligence issues.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 87,
+        "fields": {
+            "first_name": "John",
+            "last_name": "Kerry",
+            "election": 9,
+            "party": "Democrat",
+            "state": "Massachusetts",
+            "priority": 11,
+            "description": "''",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/john-kerry-2000.jpg",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p>John Kerry is a Senator from Massachusetts. He gained prominence in his youth as a Vietnam Veteran Against the War. He also won a Silver Star in that war. He is a solid liberal on the political spectrum. His home state is strongly Democratic, but his views may help the Democrats reduce the loss of support to Ralph Nader. He can also be helpful in New Hampshire.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 88,
+        "fields": {
+            "first_name": "Evan",
+            "last_name": "Bayh",
+            "election": 9,
+            "party": "Democrat",
+            "state": "Indiana",
+            "priority": 12,
+            "description": "''",
+            "color_hex": "#0000FF",
+            "secondary_color_hex": "#90C0FF",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/evan-bayh-2000.jpg",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p>Evan Bayh is a Senator from Indiana and a former Governor. He is broadly popular in that state and is a leader of the moderate wing of the Democrats. This could help the Democrats compete in the Midwest and South, but it could also alienate the left-wing of the party and drive additional support to Ralph Nader's bid.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 89,
+        "fields": {
+            "first_name": "Winona",
+            "last_name": "LaDuke",
+            "election": 9,
+            "party": "Green",
+            "state": "Minnesota",
+            "priority": 13,
+            "description": "''",
+            "color_hex": "#00C100",
+            "secondary_color_hex": "#A1FFA1",
+            "is_active": 0,
+            "image_url": "https://www.jetsimon.com/public/static/images/winona-laduke-2000.jpg",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "<p>Winona LaDuke is a Native American activist of Ojibwe ancestry. She lives in Minnesota and has been active in attempts to regain land that once belonged to various American Indian tribes. She has written a book and started organizations in support of this issue.</p>",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 90,
+        "fields": {
+            "first_name": "Ezola",
+            "last_name": "Foster",
+            "election": 9,
+            "party": "Reform",
+            "state": "California",
+            "priority": 14,
+            "description": "''",
+            "color_hex": "#FFFF00",
+            "secondary_color_hex": "#FFFFC0",
+            "is_active": 0,
+            "image_url": "''",
+            "electoral_victory_message": "''",
+            "electoral_loss_message": "''",
+            "no_electoral_majority_message": "''",
+            "description_as_running_mate": "''",
+            "candidate_score": 0,
+            "running_mate": true
+        }
+    }
+]
+
+campaignTrail_temp.running_mate_json = [
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 57,
+        "fields": {
+            "candidate": 80,
+            "running_mate": 90
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 56,
+        "fields": {
+            "candidate": 79,
+            "running_mate": 89
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 48,
+        "fields": {
+            "candidate": 77,
+            "running_mate": 81
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 52,
+        "fields": {
+            "candidate": 78,
+            "running_mate": 85
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 53,
+        "fields": {
+            "candidate": 78,
+            "running_mate": 86
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 49,
+        "fields": {
+            "candidate": 77,
+            "running_mate": 82
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 54,
+        "fields": {
+            "candidate": 78,
+            "running_mate": 87
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 55,
+        "fields": {
+            "candidate": 78,
+            "running_mate": 88
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 50,
+        "fields": {
+            "candidate": 77,
+            "running_mate": 83
+        }
+    },
+    {
+        "model": "campaign_trail.running_mate",
+        "pk": 51,
+        "fields": {
+            "candidate": 77,
+            "running_mate": 84
+        }
+    }
+]
+
+campaignTrail_temp.credits = "<button onclick='credits()'>Ryker & Others</button>"
+
+credits = function() {
+credits = [ "Lead Developer:", "Ryker", " ", "Coders:", "Paul David Wellstone", "StrawberryMaster", " ", "Writers:", "ThatQuayleSimp", "PingPongProductions", "Junior", "Person", " ", "Editor:", "TaviTales", " ", "Version:", "Indev",]
+text = "CREDITS AND GAME VERSION:\n\n"
+for (i in credits) {
+    text += credits[i] + "\n"
+}
+alert(text)
+}
+
+campaignTrail_temp.opponents_default_json = [
+    {
+        "election": 9,
+        "candidates": [
+            77,
+            78,
+            79,
+            80
+        ]
+    }
+]
+
+campaignTrail_temp.opponents_weighted_json = [
+    {
+        "election": 9,
+        "candidates": [
+            77,
+            78,
+            79,
+            80
+        ]
+    }
+]
+
+campaignTrail_temp.temp_election_list = [
+    {
+        "id": 9,
+        "year": 2000,
+        "is_premium": 0,
+        "display_year": "Biden '08"
+    }
+]
+
+jet_data = {
+    "headerColor": "#222f5c",
+    "windowColor": "#ffffff",
+    "containerColor": "#2e3c76",
+    "innerWindowColor": "#ffffff",
+    "bannerImageUrl": "https://jetsimon.com/public/placeholderbanner.png",
+    "backgroundImageUrl": "https://paul-david-wellstone.neocities.org/bgbiden.gif",
+    "endingTextColor": "#000000",
+    "customQuote": "",
+    "gameTitle": "Biden '08"
+}
+
+//#startcode
+
+
+corrr = '\n              <h2>Biden ‘08</h2>\n            ';
+
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#222f5c";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#ffffff";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#2e3c76";
+
+document.getElementById("header").src = "https://paul-david-wellstone.neocities.org/supewrcoolbiden.png";
+
+document.body.background = "https://paul-david-wellstone.neocities.org/bgbiden.gif";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#FFFFFF";
+
+document.getElementById("theme_picker").style.display = "none";
+document.styleSheets[0].insertRule(".footer h4 { display: none;}", 0);
+
+$(".container")[0].style.padding = "0.125em";
+
+document.styleSheets[0].insertRule(".game_header {border-color:#808fa9!important; ", 0);
+document.styleSheets[0].insertRule("#game_window {border-style: solid!important; border-width: .25em!important; border-radius: 3px!important; border-color:#808fa9!important; ", 0);
+document.styleSheets[0].insertRule(".inner_window_w_desc {border-color: white !important;", 0);
+
+document.styleSheets[0].insertRule("#election_image img, #candidate_image, #running_mate_image, #candidate_pic, #running_mate_pic, #visit_window img, .person_image, #recommended_reading_box img, #election_night_window img, #new_game_window img, #feedback_window img, #header {border-style: solid!important; border-width: .125em!important; border-color:#243956!important; ", 0);
+
+document.styleSheets[0].insertRule("#election_description_window, #running_mate_description_window, #candidate_description_window, #inner_window_1, #map_container, #opponent_selection_description_window, .inner_window_question, .inner_window_sign_display, #state_info, #overall_result, #state_result, #recommended_reading_box, #visit_window, #election_night_window, #new_game_window, #feedback_window, table, td, th {border-style: solid!important; border-width: .125em!important; border-radius: 3px!important; border-color:#808fa9!important;  background-color:#f2f6ff!important; ", 0);
+
+document.styleSheets[0].insertRule("table, td, th {border-style: solid!important; border-width: .125em!important; border-radius: 3px!important; border-color:#a9b6cb!important;  background-color:#f2f6ff!important; ", 0);
+
+document.styleSheets[0].insertRule(".footer, .content_single, hr {border-color:#a9b6cb!important; ", 0);
+
+document.styleSheets[0].insertRule(".container {border-style: solid!important; border-width: .2em!important; border-radius: 3px!important; border-color:#494949!important; ", 0);
+
+document.styleSheets[0].insertRule("a, #site_credits p {color:#a9b6cb!important; ", 0);
+
+document.styleSheets[0].insertRule(".campaign_trail_start_emphasis, #menu_container, #overall_result_container, #state_result_container {background-color:transparent!important;", 0);
+
+document.styleSheets[0].insertRule(".inner_window_question h3, #state_info h3, #overall_result h3, #state_result h3, #visit_window h3, #election_night_window h3, #new_game_window h3, #feedback_window h3 {border-style: solid!important; border-width: .125em!important; border-radius: 1.5px!important; border-color: #a9b6cb!important;color: #6790d3!important;background: linear-gradient( #f2f6ff, #FFFFFF )!important;", 0);
+
+document.styleSheets[0].insertRule(" h3, h1, b, strong, #credits, #running_mate_description_window li, #candidate_description_window li {color: #494949!important;", 0);
+
+document.styleSheets[0].insertRule(".campaign_trail_start_emphasis, #menu_container, #overall_result_container, #state_result_container {background-color:transparent!important;", 0);
+
+document.styleSheets[0].insertRule(" select, button {border-style: solid!important; border-width: .125em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#808fa9!important; background: linear-gradient( #f2f6ff, #FFFFFF )!important; box-shadow: 0 0 10px rgba(73, 73, 73, 0.45)!important;", 0);
+
+document.styleSheets[0].insertRule("#game_window{ height:41em !important;}", 0);
+document.styleSheets[0].insertRule("#main_content_area { height:81% !important;}", 0);
+document.styleSheets[0].insertRule(".inner_window_question{ margin:0.25em 0.25em 0.75em !important;}", 0);
+
+
+//#endcode
