@@ -7186,7 +7186,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3345,
             "candidate": 78,
             "affected_candidate": 78,
-            "global_multiplier": -0.01
+            "global_multiplier": -0.03
         }
     },
     {
@@ -7196,7 +7196,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3345,
             "candidate": 77,
             "affected_candidate": 79,
-            "global_multiplier": -0.01
+            "global_multiplier": -0.02
         }
     },
     {
@@ -7206,7 +7206,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3345,
             "candidate": 78,
             "affected_candidate": 77,
-            "global_multiplier": 0.015
+            "global_multiplier": 0.04
         }
     },
     {
@@ -22795,7 +22795,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 3329,
             "candidate": 78,
-            "answer_feedback": "You're certainly getting attention in the news for this stance, but it is not a mainstream position in your party. Perhaps this will establish you as an independent thinker..."
+            "answer_feedback": "Missouri will be key to this election. It’s smart to campaign there."
         }
     },
     {
