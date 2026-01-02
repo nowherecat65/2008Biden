@@ -4383,7 +4383,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 184,
-            "state_multiplier": 1.015
+            "state_multiplier": 1.035
         }
     },
     {
@@ -4437,7 +4437,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 190,
-            "state_multiplier": 1
+            "state_multiplier": 1.0125
         }
     },
     {
@@ -4500,7 +4500,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 197,
-            "state_multiplier": 1.0132131
+            "state_multiplier": 1.0232131
         }
     },
     {
@@ -4509,7 +4509,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 198,
-            "state_multiplier": 1.03
+            "state_multiplier": 1.051
         }
     },
     {
@@ -4644,7 +4644,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 213,
-            "state_multiplier": 0.9546757
+            "state_multiplier": 0.9646757
         }
     },
     {
@@ -4725,7 +4725,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 222,
-            "state_multiplier": 1.1175
+            "state_multiplier": 1.1275
         }
     },
     {
@@ -4788,7 +4788,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 229,
-            "state_multiplier": 1.025
+            "state_multiplier": 1.045
         }
     },
     {
@@ -5040,7 +5040,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 78,
             "state": 206,
-            "state_multiplier": 1.04129625
+            "state_multiplier": 1.056129625
         }
     },
     {
