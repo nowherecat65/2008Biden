@@ -620,6 +620,9 @@ function addDynamicCSS() {
 #overall_result h3 {
   background-color: #C0C4D5;
 }
+#question_form {
+  font-size: 1.15em !important;
+}
 #map_container {
   background: #F8F8F8;
   border-radius: 1px;
