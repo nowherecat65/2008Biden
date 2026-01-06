@@ -1,3 +1,34 @@
+campaignTrail_temp.cyoa = true
+cyoAdventure = function(a) {
+ ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
+    if(ans == 3318){
+campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/4nC4TWdV/IMG-9854.png';
+campaignTrail_temp.running_mate_last_name = 'Kaine';
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+ `#campaign_sign {
+    background-image: url("https://i.postimg.cc/4nC4TWdV/IMG-9854.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-color: #c9c9c9;    
+    border-width: .01em;
+    margin: 0 auto;
+    background-position: center;
+    width: 100%; 
+    height: 128px;
+    margin: 0 auto;
+    margin-left: -0.033em;
+    margin-right: -0.033em;
+  }
+#campaign_sign p {
+    color: rgb(0 0 0 / 0%);
+}`
+;
+
+    }
+}
+
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -26556,7 +26587,7 @@ campaignTrail_temp.running_mate_state_id = '226';
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
  `#campaign_sign {
-    background-image: url("https://file.garden/aNtjn2887DiA_8HP/IMG_9854.webp");
+    background-image: url("https://i.postimg.cc/BZR26sPC/IMG-98541.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-color: #c9c9c9;    
