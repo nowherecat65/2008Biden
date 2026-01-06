@@ -4762,7 +4762,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 214,
-            "state_multiplier": 0.98
+            "state_multiplier": 1.001
         }
     },
     {
@@ -4825,7 +4825,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 221,
-            "state_multiplier": 0.9925
+            "state_multiplier": 1.0225
         }
     },
     {
@@ -4924,7 +4924,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 78,
             "state": 181,
-            "state_multiplier": 0.989
+            "state_multiplier": 0.979
         }
     },
     {
@@ -5131,7 +5131,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 78,
             "state": 204,
-            "state_multiplier": 0.983
+            "state_multiplier": 0.973
         }
     },
     {
@@ -5293,7 +5293,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 78,
             "state": 222,
-            "state_multiplier": 0.951
+            "state_multiplier": 0.961
         }
     },
     {
@@ -26550,14 +26550,14 @@ campaignTrail_temp.jet_data = [{
 ]
 
 campaignTrail_temp.candidate_image_url = "https://i.postimg.cc/FRW0G9FT/joebiden2008.png";
-campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/MHrn809Q/timkainebiden08.png";
+campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/sD2vPLFJ/biden08-button.png";
 campaignTrail_temp.running_mate_state_id = '226';
 
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
  `#campaign_sign {
     background-image: url("https://file.garden/aNtjn2887DiA_8HP/IMG_9854.webp");
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     border-color: #c9c9c9;    
     border-width: .01em;
@@ -26573,3 +26573,4 @@ style_overwrite.innerHTML =
     color: rgb(0 0 0 / 0%);
 }`
 ;
+document.head.appendChild(style_overwrite);
