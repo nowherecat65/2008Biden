@@ -1,34 +1,3 @@
-campaignTrail_temp.cyoa = true
-cyoAdventure = function(a) {
- ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length - 1]
-    if(ans == 3318){
-campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/MHrn809Q/timkainebiden08.png';
-campaignTrail_temp.running_mate_last_name = 'Kaine';
-const style_overwrite = document.createElement("style");
-style_overwrite.innerHTML = 
- `#campaign_sign {
-    background-image: url("https://i.postimg.cc/4nC4TWdV/IMG-9854.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-color: #c9c9c9;    
-    border-width: .01em;
-    margin: 0 auto;
-    background-position: center;
-    width: 100%; 
-    height: 128px;
-    margin: 0 auto;
-    margin-left: -0.033em;
-    margin-right: -0.033em;
-  }
-#campaign_sign p {
-    color: rgb(0 0 0 / 0%);
-}`
-;
-
-    }
-}
-
-
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -226,6 +195,13 @@ campaignTrail_temp.questions_json = [
         "pk": 13899,
         "fields": {
             "description": "Well, the chaotic and restless roller coaster that the press calls the “2008 election season” is finally coming to a close. But before we can throw in the towel and witness our destiny, we’ve got to do some wrap-up campaigning. So, where are we going?"
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 14093,
+        "fields": {
+            "description": "From the start, it wasn't looking good. Clinton won the Iowa caucus and New Hampshire primary in a blowout. You pressed on, desperate to win. But the final nail in the coffin was when Hillary won nearly all of the races on Super Tuesday. It seems almost impossible at this point to win the nomination, and you lose all of your momentum."
         }
     }
 ]
@@ -917,6 +893,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 13814,
             "description": "We should be standing up to Putin’s bullshit! This guy is a dictator, plain and simple, and I heavily doubt he'll ever change. There's no hope for Russia as long as this guy is in power! I'm sure offering extra support for NATO and some heavy sanctions will be enough to keep Russia in line."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 14094,
+        "fields": {
+            "question": 14093,
+            "description": "This is malarkey! No! Fuck!"
         }
     }
 ]
@@ -4703,7 +4687,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 204,
-            "state_multiplier": 1.10
+            "state_multiplier": 1.1
         }
     },
     {
@@ -4757,7 +4741,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 210,
-            "state_multiplier": 0.953191234567898765
+            "state_multiplier": 0.9531912345678988
         }
     },
     {
@@ -4892,7 +4876,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 225,
-            "state_multiplier": 1.0
+            "state_multiplier": 1
         }
     },
     {
@@ -5018,7 +5002,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 78,
             "state": 188,
-            "state_multiplier": 1.17498198951611231231
+            "state_multiplier": 1.1749819895161122
         }
     },
     {
@@ -26570,19 +26554,118 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 78,
             "answer_feedback": "This is certainly hawkish of you, Joe. However, considering the widespread concern people have been feeling about Russia lately, this should go down well. The defense establishment is also definitely happy with what you're saying…"
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 14095,
+        "fields": {
+            "answer": 14094,
+            "candidate": 78,
+            "answer_feedback": "Newspapers read “SENATOR CLINTON BECOMES FIRST WOMAN NOMINATED FOR POTUS” all across the US. It’s Joever…"
+        }
     }
-]
-
-
-
-campaignTrail_temp.jet_data = [{
-    "cyoa_variables": {}
-}
 ]
 
 campaignTrail_temp.candidate_image_url = "https://i.postimg.cc/QCSLfSTv/biden08portrait.png";
 campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/sD2vPLFJ/biden08-button.png";
 campaignTrail_temp.running_mate_state_id = '226';
+
+let ohnobro = 0;
+
+campaignTrail_temp.cyoa = true
+
+const qMap = new Map(campaignTrail_temp.questions_json.map(q => [q.pk, q]));
+const tunnel = (pk) => qMap.get(pk);
+
+cyoAdventure = function(a) {	
+    const ans = e.player_answers[e.player_answers.length - 1];
+	e.noCounter = campaignTrail_temp.player_answers.length;
+
+	if (ans === 3398 || ans === 3411 || ans === 3334 || ans === 13982) {
+		ohnobro++;
+	}
+ 
+    if(ans === 3318){
+		campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/MHrn809Q/timkainebiden08.png';
+		campaignTrail_temp.running_mate_last_name = 'Kaine';
+		
+		if (!document.getElementById("kaine-style")) {
+			const style = document.createElement("style");
+			style.id = "kaine-style";
+			style.textContent =
+			`#campaign_sign {
+				background-image: url("https://i.postimg.cc/4nC4TWdV/IMG-9854.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				border-color: #c9c9c9;    
+				border-width: .01em;
+				margin: 0 auto;
+				background-position: center;
+				width: 100%; 
+				height: 128px;
+				margin: 0 auto;
+				margin-left: -0.033em;
+				margin-right: -0.033em;
+			  }
+			#campaign_sign p {
+				color: rgb(0 0 0 / 0%);
+			}`
+			document.head.appendChild(style);
+		}
+    }
+	
+	if (ohnobro >= 3) {
+		const endingQuestion = tunnel(14093);
+		if (endingQuestion) {
+			campaignTrail_temp.questions_json[5] = endingQuestion;
+		}
+	}
+	
+	if (ans === 14094) {
+		const fields = e.global_parameter_json?.[0]?.fields;
+		if (fields) {
+			const idx = campaignTrail_temp.question_number;
+			fields.question_count = idx + 1;
+
+			fields.global_variance = 0.005;
+			fields.state_variance = 0.002;
+		}
+
+		const candId = 78;
+        const cand = e.candidate_json.find(p => p.pk === candId);
+		if (cand?.fields) {
+			cand.fields.first_name = "Hillary";
+			cand.fields.last_name = "Clinton";
+		}
+		
+		const blueStates = new Set([
+            "WA", "OR", "CA", "NV", "MT", "CO", "NM", "HI", 
+            "MN", "IA", "MO", "AR", "WI", "IL", "MI", "IN", 
+            "OH", "PA", "NY", "VT", "NH", "ME", "MA", "RI", 
+            "CT", "NJ", "DE", "MD", "DC", "VA", "NC", "FL"
+        ]);
+
+        const stateAbbrMap = new Map(e.states_json.map(s => [s.pk, s.fields.abbr]));
+
+        e.candidate_state_multiplier_json.forEach(mod => {
+            if (mod.fields.candidate === 78) {
+                const abbr = stateAbbrMap.get(mod.fields.state);
+                
+                let mult = blueStates.has(abbr) ? 1.20 : 0.85;
+
+                mult += (Math.random() * 0.06) - 0.03;
+
+                if (["MT", "IN", "AR", "MO", "NC"].includes(abbr)) {
+                    mult += 0.2575; 
+                }
+
+                mod.fields.state_multiplier = mult;
+            }
+        });
+		
+	}
+	
+}
 
 const style_overwrite = document.createElement("style");
 style_overwrite.innerHTML = 
