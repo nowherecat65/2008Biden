@@ -45,29 +45,6 @@ campaignTrail_temp.election_json = [
 campaignTrail_temp.candidate_json = [
     {
         "model": "campaign_trail.candidate",
-        "pk": 77,
-        "fields": {
-            "first_name": "John",
-            "last_name": "McCain",
-            "election": 9,
-            "party": "Republican",
-            "state": "Arizona",
-            "priority": 2,
-            "description": "<p>Al Gore enters the 2000 election as the Democratic candidate after eight years as Vice President under Bill Clinton.</p><p>Gore has a lot of options in his campaign. He can embrace the legacy of Clinton, for better or worse. Politically, he can run as a centrist, or move to the left and run as a more traditional liberal Democrat than Clinton did. The presence of the well-known Ralph Nader as a Green Party candidate complicates this decision. Gore is essentially campaigning on two fronts.</p>",
-            "color_hex": "#cb3536",
-            "secondary_color_hex": "#df9a86",
-            "is_active": 0,
-            "image_url": "https://i.postimg.cc/x1fxsdn6/mccainbiden2008.png",
-            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Though it was perhaps expected, you could have easily faltered at a number of points. Credit to you for pulling through.</p><p>On the political front, you can continue the Clinton legacy and strengthen Social Security for generations to come. Perhaps you can succeed on health care where Clinton came up short? Or maybe you can create a future of renewable energy for America. Just be wary of a (George or Jeb?) Bush challenge in 2004.</p>",
-            "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Surely the second-guessing will be intense, but if things were close you could probably run again in 2004.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner. A lot should depend on the margin of his victory, and whether it was large or small.</p>",
-            "no_electoral_majority_message": "<h3>Sorry! You have lost in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, for the first time since 1824. Unfortunately for you, a majority of states have Republican controlled congressional delegations.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner.</p>",
-            "description_as_running_mate": "''",
-            "candidate_score": 1,
-            "running_mate": false
-        }
-    },
-    {
-        "model": "campaign_trail.candidate",
         "pk": 78,
         "fields": {
             "first_name": "Joe",
@@ -84,6 +61,29 @@ campaignTrail_temp.candidate_json = [
             "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Confounding the predictions of many experts, you were able to turn the tables on Al Gore, in spite of the economy and Clinton's popularity.</p><p>On the political front, you can push for tax cuts to spur the economy and return the budget surplus to the American people. You might also pursue education and immigration reform, individual Social Security accounts, and new laws to defend the family and the sanctity of life.</p>",
             "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Perhaps it was always a long-shot, with the Democrats in such a commanding position after eight years of Bill Clinton. In any case, at least you are still the Governor of Texas.</p><p>Expect Al Gore to unleash a new round of government programs and environmental regulations. You are still youngish, however. If the election was close this time, perhaps you can run again in 2004, or work on behalf your brother Jeb.</p>",
             "no_electoral_majority_message": "<h3>Wow! You have won in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, marking the first time this has happened since 1824. Fortunately for you, the majority of U.S. states have Republican controlled congressional delegations, and they will cast their votes accordingly.</p><p>Given the incredibly close nature of the election, you will surely be expected to govern as a moderate, conciliatory President. Right??</p>",
+            "description_as_running_mate": "''",
+            "candidate_score": 1,
+            "running_mate": false
+        }
+    },
+    {
+        "model": "campaign_trail.candidate",
+        "pk": 77,
+        "fields": {
+            "first_name": "John",
+            "last_name": "McCain",
+            "election": 9,
+            "party": "Republican",
+            "state": "Arizona",
+            "priority": 2,
+            "description": "<p>John McCain has gone through a lot to be where he is now, from being tortured by the NVA during his time serving in Vietnam, to being a candidate for President of the United States after representing Arizona in the Senate for 22 years.</p><p>McCain is what you would call a \"maverick,\" someone who frequently breaks from the party norms and votes differently from everybody else. This can be quite beneficial for him, but it can also be a surefire way to bleed conservative support. Thus, the best way for him to even make this close is to balance the scales. One thing is clear however: John has an extraordinarily difficult battle ahead of him, both in the primaries and in the general election...</p>",
+            "color_hex": "#cb3536",
+            "secondary_color_hex": "#df9a86",
+            "is_active": 1,
+            "image_url": "https://file.garden/aNtAfG887DiA_7lO/2008Biden/mccain.png",
+            "electoral_victory_message": "<h3>Congratulations! You have won the 2000 election.</h3><p>Though it was perhaps expected, you could have easily faltered at a number of points. Credit to you for pulling through.</p><p>On the political front, you can continue the Clinton legacy and strengthen Social Security for generations to come. Perhaps you can succeed on health care where Clinton came up short? Or maybe you can create a future of renewable energy for America. Just be wary of a (George or Jeb?) Bush challenge in 2004.</p>",
+            "electoral_loss_message": "<h3>Sorry! You have lost the 2000 election.</h3><p>Surely the second-guessing will be intense, but if things were close you could probably run again in 2004.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner. A lot should depend on the margin of his victory, and whether it was large or small.</p>",
+            "no_electoral_majority_message": "<h3>Sorry! You have lost in a squeaker.</h3><p>No candidate achieved a majority of the electoral votes, for the first time since 1824. Unfortunately for you, a majority of states have Republican controlled congressional delegations.</p><p>It seems that with George W. Bush and a Republican majority, the United States can expect some conservative policy-making over the next four years. Hopefully Bush comes through on his promise to govern in a bipartisan, conciliatory manner.</p>",
             "description_as_running_mate": "''",
             "candidate_score": 1,
             "running_mate": false
@@ -633,6 +633,12 @@ function addDynamicCSS() {
 }
   		.campaign_trail_start_emphasis {
     		background-color: #2E3C76;
+	}
+	
+	.person_image img {
+		object-fit: cover;
+		object-position: center;
+	}
 
 	`;
 	var styleElem = document.createElement('style');
@@ -1003,5 +1009,186 @@ document.head.appendChild(style);
 const gameWindow_player = document.getElementById("game_window");
 
 setupMusicPlayer();
+
+// This is just so that we can prevent the VP observer
+// from running running more than once. taken from 2012LBM
+(function() {
+    'use strict';
+
+    function handleNavigation() {
+        const gameWindow = document.getElementById("game_window");
+        if (!gameWindow) return;
+
+        // detect VP screen
+        const summary = document.getElementById("running_mate_summary");
+        
+        if (summary) {
+            // check if we are moving backwards (triggered by the opponent screen back button)
+            const isGoingBack = window.sessionStorage.getItem("skip_direction") === "backward";
+
+            if (isGoingBack) {
+                const backBtn = document.getElementById("running_mate_id_back");
+                if (backBtn && !backBtn.dataset.autoClicked) {
+                    console.log("VP selection screen detected. Skipping...");
+                    // clear the flag so forward movement works next time
+                    window.sessionStorage.removeItem("skip_direction");
+                    backBtn.dataset.autoClicked = "true";
+                    backBtn.click();
+                }
+            } else {
+                // move forward
+                const nextBtn = document.getElementById("running_mate_id_button");
+                // ensure we don't click buttons with custom switchers
+                if (nextBtn && !nextBtn.hasAttribute("data-custom-switcher") && !nextBtn.dataset.autoClicked) {
+                    console.log("VP selection screen detected. Skipping...");
+                    nextBtn.dataset.autoClicked = "true"; 
+                    nextBtn.click();
+                }
+            }
+        }
+
+        // detect opponent selection screen
+        const opponentBack = document.getElementById("opponent_selection_id_back");
+        if (opponentBack && !opponentBack.dataset.skipListener) {
+            // when user clicks Back, set flag to 'backward'
+            opponentBack.addEventListener("click", () => {
+                window.sessionStorage.setItem("skip_direction", "backward");
+            });
+            opponentBack.dataset.skipListener = "true";
+        }
+    }
+
+    window.handleNavigation = handleNavigation;
+})();
+
+// This is, essentially, for preventing candidates or running mates
+// from being selected. Very useful if you're having a one-candidate
+// mod but still want to list the other candidates
+// Taken from 2012LBM
+(function () {	
+    const BAD_CANDIDATE_IDS = new Set(['77', '79', '80']);
+    const RESET_CANDIDATE_ID = '78'; 
+
+    const IDS = {
+        gameWindow: "game_window",
+        candidateInput: "candidate_id",
+        candidateButton: "candidate_id_button",
+        backButton: "candidate_id_back",
+        runningMateButton: "running_mate_id_button",
+        finalNext: "opponent_selection_id_button",
+        finalBack: "opponent_selection_id_back",
+        initialContinue: "election_id_button",
+		gameMapHeader: "transport_box"
+    };
+
+    let lastSelectedCandidateId = null;
+	
+	function automateStartSequence() {
+		// check for the candidate input
+		const candidateInput = document.getElementById(IDS.candidateInput);
+		const finalNext = document.getElementById(IDS.finalNext);
+		const finalBack = document.getElementById(IDS.finalBack);
+		const gameMap = document.getElementById(IDS.gameMapHeader);
+
+        // if the map/transport box is loaded, we are done with setup
+		if (gameMap) {
+			finished = true;
+			return;
+		}
+		
+		// if we are on the opponent selection screen, clean up and stop.
+		if (finalNext && finalBack) {
+			let candidateId = lastSelectedCandidateId;
+
+			// try to read candidate_id directly if available
+			const candidateInput = document.getElementById(IDS.candidateInput);
+			if (candidateInput?.value) {
+				candidateId = candidateInput.value;
+				lastSelectedCandidateId = candidateId;
+			}
+
+			if (BAD_CANDIDATE_IDS.has(candidateId)) {
+				finalBack.remove();
+			}
+			return;
+		}
+		
+        // candidate selection screen check
+        if (candidateInput) {
+            const currentId = candidateInput.value;
+            lastSelectedCandidateId = currentId;
+
+            const candidateButton = document.getElementById(IDS.candidateButton);
+            const backButton = document.getElementById(IDS.backButton);
+
+            // block 'bad' candidates by removing the Continue button
+            if (BAD_CANDIDATE_IDS.has(currentId) && candidateButton) {
+                candidateButton.remove();
+            }
+            
+            // if a specific candidate should force a Back click
+            else if (currentId === RESET_CANDIDATE_ID && backButton && !candidateButton) {
+                backButton.click();
+				
+                // try to click the initial continue button if we got sent back to start
+                const initialContinue = document.getElementById(IDS.initialContinue);
+                if (initialContinue) {
+                     initialContinue.click();
+                }
+            }
+        }
+	}
+	
+	window.tctAutoStart = { tick: automateStartSequence };
+	
+})();
+
+// This is a catch-all mutation observer so that
+// we keep one having them all run at once. taken from 2012LBM
+(function() {
+    'use strict';
+
+    if (window.glorble) {
+        window.glorble.disconnect();
+    }
+	
+	window.glorbleTasks = [];
+	
+	const initialTasks = () => {
+        // VP screen skipper
+        if (document.getElementById("game_window") && typeof window.handleNavigation === 'function') {
+            window.handleNavigation();
+        }
+
+        // candidate blocking
+		if (window.tctAutoStart?.tick) {
+			window.tctAutoStart.tick();
+		}
+    };
+	
+	window.glorbleTasks.push(initialTasks);
+	
+	const handleMutations = (mutationsList) => {
+        if (!window.glorbleTasks) return;
+        
+        for (let i = 0; i < window.glorbleTasks.length; i++) {
+            try {
+                window.glorbleTasks[i]();
+            } catch (e) {
+                console.error("Zoinks! Error in glorble task:", e);
+            }
+        }
+    };
+
+    const targetNode = document.getElementById("game_window");
+    const config = { childList: true, subtree: true };
+
+    window.glorble = new MutationObserver(handleMutations);
+    window.glorble.observe(targetNode, config);
+
+    handleMutations();
+    //console.log("glorble...");
+})();
+
 
 //#endcode
