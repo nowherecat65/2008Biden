@@ -26644,6 +26644,7 @@ campaignTrail_temp.answer_feedback_json = [
 campaignTrail_temp.candidate_image_url = "https://i.postimg.cc/QCSLfSTv/biden08portrait.png";
 campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/sD2vPLFJ/biden08-button.png";
 campaignTrail_temp.running_mate_state_id = '226';
+campaignTrail_temp.candidate_last_name = 'Biden';
 
 let ohnobro = 0;
 
@@ -26705,7 +26706,7 @@ cyoAdventure = function(a) {
 			campaignTrail_temp.corQuestion = true;
 		}
 		
-		const candId = 78;
+		const candId = e.candidate_id;
         const cand = e.candidate_json.find(p => p.pk === candId);
 		if (cand?.fields) {
 			cand.fields.first_name = "Hillary";
@@ -26714,6 +26715,7 @@ cyoAdventure = function(a) {
 		}
 		
 		Object.assign(campaignTrail_temp, {
+			candidate_last_name: 'Clinton',
 			candidate_image_url: 'https://file.garden/aNtAfG887DiA_7lO/2008Biden/clinton.jpg',
 			running_mate_image_url: 'https://file.garden/aNtAfG887DiA_7lO/2008Biden/dodd.jpg',
 			running_mate_last_name: 'Dodd',
