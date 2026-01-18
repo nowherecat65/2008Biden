@@ -640,6 +640,92 @@ function addDynamicCSS() {
 		object-position: center;
 	}
 
+				        .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+            border-bottom: .125em dotted #333333;
+        }
+
+        .inner_window_question h3 .mytooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+            border-bottom: .125em dotted #f8f8f8f8;
+        }
+
+        #inner_window_1 p:first-of-type:first-letter, #inner_window_2 p:first-of-type:first-letter,
+			#inner_window_3 p:first-of-type:first-letter, #running_mate_description_window p:first-of-type:first-letter {
+			  float: left; line-height: 0.7em; margin-top: 0.1em; color: #262626; font-weight: bold;
+			}
+			#inner_window_1 p:first-of-type:first-letter {
+			  font-size: 4.5em; margin-right: 0.05em;
+			}
+			#inner_window_2 p:first-of-type:first-letter, #inner_window_3 p:first-of-type:first-letter,
+			#running_mate_description_window p:first-of-type:first-letter {
+			  font-size: 3.5em; margin-right: 0.1em;
+			}		
+
+
+        ::selection {
+            background-color: #9BC79B4D;
+        }
+
+        .inner_window_w_desc h3, .inner_window_front h3, #credits {
+	color: #333333;!important;
+	font-family: Courier New, Courier, monospace!important;
+	font-weight: 700!important;
+        }
+
+        .inner_window_w_desc li {
+	color: #333333!important;
+        }
+
+        .inner_window_w_desc {
+	border: none;
+        }
+
+        .mytooltip .mytooltiptext {
+            width: 240px;
+            background: rgba(242, 242, 242, 0.95); 
+            color: #333333;
+            text-align: left;
+            padding: 7.225px;
+            padding-top: 15px;
+            position: absolute;
+            z-index: 99;
+            bottom: 101%;
+            left: 50%;
+            margin-left: -130px;
+            margin-bottom: 3px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: .185em double #262626;
+	border-radius: 3px;
+            pointer-events: none;
+            font-size: 10.833px !important;
+            line-height: 18.72px !important;
+            font-weight: bold !important;
+            font-style: normal !important;
+	font-family: Courier New, Courier, monospace!important;
+        }
+
+        .mytooltip .mytooltiptext img {
+            max-width: 240px;
+            height: auto;
+            border: 1px #000000 solid;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.25s;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.25s;
+        }
+
 	`;
 	var styleElem = document.createElement('style');
 	styleElem.type = 'text/css';
@@ -650,6 +736,35 @@ function addDynamicCSS() {
 }
 
 addDynamicCSS();
+
+tooltipList = [
+    {searchString: "Hillary Clinton", explanationText: "<img src='https://paul-david-wellstone.neocities.org/Public/TCT/1980OR-03Primary/Code1/GreyPanthers.png' width='240px'><br>My main challenger. I hope we can prevent the Clinton’s comeback."},
+    {searchString: "George W. Bush", explanationText: "<img src='https://paul-david-wellstone.neocities.org/Public/TCT/1980OR-03Primary/Code1/OregonStateBoardofExaminersofNursingHomeAdministrators.png' width='240px'><br>President Dubya. One of the worst in history."},
+    {searchString: "Dick Cheney", explanationText: "<img src='https://paul-david-wellstone.neocities.org/Public/TCT/1980OR-03Primary/Code2/Despitehispastlosses.png' width='240px'><br>A war criminal at his very worst."},
+    {searchString: "John McCain", explanationText: "One of my best friends, and now he’s my rival in the election."},
+    {searchString: "Beau Biden", explanationText: "Following in my footsteps in politics. Definitely makes me a proud father."}, 
+    {searchString: "Chuck Graham", explanationText: "“Stand up, Chuck. Let ‘em see ya!”"},
+    {searchString: "John Kerry", explanationText: "He won three purple hearts, at least."},
+    {searchString: "Ted Kennedy", explanationText: "A true veteran in the Senate."},
+    {searchString: "Jill Biden", explanationText: "Can’t take my eyes off of her."},
+    {searchString: "Joe Lieberman", explanationText: "McCain’s husband.},
+    {searchString: "Bill Clinton", explanationText: "President Bubba. I voted to acquit him after being unfaithful to Hillary, and I have no regrets."},
+    {searchString: "Tim Pawlenty", explanationText: "Complete idiot."},
+    {searchString: "Barack Obama", explanationText: "Smart, articulate, handsome. What else is there to say?"},
+    {searchString: "Ronald Reagan", explanationText: "President Hollywood. That was the only thing that he was meant for."},
+    {searchString: "Kathleen Sebelius", explanationText: "Bipartisanship as a person."},
+    {searchString: "Evan Bayh", explanationText: "Works his damn hardest on that floor, and I respect that."},
+    {searchString: "Tim Kaine", explanationText: "Virginia needed him, now I need him."},
+    {searchString: "Benazir Bhutto", explanationText: "Shot down in cold blood."},
+    {searchString: "Ted Strickland", explanationText: "Governor of Ohio. He’s a strong campaigner, as we saw in 2006"},
+    {searchString: "Michael Dukakis", explanationText: "Our last <i>big</i> loss."},
+    {searchString: "Pat Buchanan", explanationText: "Bigot."},
+    {searchString: "Al Gore", explanationText: "Had the presidency stolen from him."},
+    {searchString: "Jason Sudeikis", explanationText: "Played me on SNL. Funny as shit."},
+    {searchString: "Ron Paul", explanationText: "Liberty VS Liberalism. Who would win?"},
+
+];
+
 
 
 class Song {
