@@ -26714,6 +26714,28 @@ cyoAdventure = function(a) {
 			cand.fields.color_hex = "#2b547e";
 		}
 		
+		// If Hillary is nominated, shift McCain/Nader/Barr colors to match the new palette.
+		const hillaryAltColors = {
+			"mccain": "#F43300",
+			"barr": "#F47600",
+			"nader": "#2BA81A"
+		};
+		
+		const applyAltColors = (list) => {
+			if (!Array.isArray(list)) return;
+			for (const c of list) {
+				const ln = c?.fields?.last_name;
+				if (!ln) continue;
+				const key = String(ln).trim().toLowerCase();
+				const hex = hillaryAltColors[key];
+				if (hex) c.fields.color_hex = hex;
+			}
+		};
+		
+		applyAltColors(e.candidate_json);
+		applyAltColors(campaignTrail_temp.candidate_json);
+		
+		
 		Object.assign(campaignTrail_temp, {
 			candidate_last_name: 'Clinton',
 			candidate_image_url: 'https://file.garden/aNtAfG887DiA_7lO/2008Biden/clinton.jpg',
