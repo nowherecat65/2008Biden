@@ -87,7 +87,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 352,
         "fields": {
-            "description": "Ever since you won the primaries, Hillary Clinton, your main opponent for the nomination, has not endorsed you yet. There are rumors that she will be endorsing McCain instead. Will you seek Senator Clinton’s endorsement?"
+            "description": "So Joe, considering that every known pollster is predicting that you are going to win the election, some of your advisors have recommended that you start setting up plans for your cabinet and that you propose them to the public. What say you?"
         }
     },
     {
@@ -355,7 +355,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3345,
         "fields": {
             "question": 352,
-            "description": "I got all the endorsements I can get. I don’t need her. Hell, I don’t need any endorsements to win because of this terrible economy that Bush has caused. So, the hell with her."
+            "description": "Now wait, let's pump the breaks and not get ahead of ourselves. We should uh- just concentrate on the election for now, we'll get to cabinet appointments later, okay?"
         }
     },
     {
@@ -379,7 +379,7 @@ campaignTrail_temp.answers_json = [
         "pk": 3368,
         "fields": {
             "question": 358,
-            "description": "I didn’t know he was paralyzed. Look, I’ll apologize, but it’s not fair that everyone always says that I put my foot in my mouth."
+            "description": "C'mon man! I didn't know he was paralysed! Look, I’ll apologize, but it’s not fair that everyone always says that I put my foot in my mouth.\n"
         }
     },
     {
@@ -643,7 +643,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12801,
         "fields": {
             "question": 352,
-            "description": "Get Hillary on the phone and let us work something out. I’ll offer her a spot in my cabinet or endorse her reelection campaign for the Senate in 2012, and I’ll lean on her if she hops on our express."
+            "description": "Wesley Clark's a great man and an excellent general, he's our best bet for Secretary of Defense. I'll definitely tap him if I win if he wants the position."
         }
     },
     {
@@ -651,7 +651,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12808,
         "fields": {
             "question": 352,
-            "description": "Look, let’s not… let’s not pressure her. Just wait a few days and I’m sure she will make an endorsement. Just watch."
+            "description": "Does anyone remember Tom Vilsack? I deeply respect his advocacy for farmers during his time as Governor of Iowa, we definitely need that kind of mindset for Secretary of Agriculture. He needs to be in my cabinet just for that!"
         }
     },
     {
@@ -940,6 +940,14 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 14096,
             "description": "Why not go for broke? Let's campaign in Indiana and Missouri, I'm sure that the polling I've seen is accurate in saying that I will crush McCain. And thus, I should be maximising my victory as much as possible."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 128009,
+        "fields": {
+            "question": 352,
+            "description": "Now that you mention it, yeah. Hillary comes to mind. She ran a tough primary campaign against me, and it was real honorable of her to endorse me so quickly. I think offering her a cabinet position is a good way to repay her, and she definitely has the chops too!"
         }
     }
 ]
@@ -4591,7 +4599,7 @@ campaignTrail_temp.candidate_state_multiplier_json = [
         "fields": {
             "candidate": 77,
             "state": 189,
-            "state_multiplier": 1.03112512342352631
+            "state_multiplier": 1.0311251234235264
         }
     },
     {
@@ -7029,27 +7037,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 3345,
             "candidate": 78,
             "affected_candidate": 78,
-            "global_multiplier": -0.045
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 12799,
-        "fields": {
-            "answer": 3345,
-            "candidate": 77,
-            "affected_candidate": 79,
-            "global_multiplier": -0.035
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 12800,
-        "fields": {
-            "answer": 3345,
-            "candidate": 78,
-            "affected_candidate": 77,
-            "global_multiplier": 0.0675
+            "global_multiplier": 0.005
         }
     },
     {
@@ -8361,6 +8349,16 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 79,
             "global_multiplier": 0.01
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 128021,
+        "fields": {
+            "answer": 128009,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "global_multiplier": 0.013
+        }
     }
 ]
 
@@ -9103,6 +9101,26 @@ campaignTrail_temp.answer_score_issue_json = [
             "issue": 31,
             "issue_score": -0.0225,
             "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 128010,
+        "fields": {
+            "answer": 12801,
+            "issue": 28,
+            "issue_score": -0.03,
+            "issue_importance": 0.5
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_issue",
+        "pk": 128022,
+        "fields": {
+            "answer": 128009,
+            "issue": 30,
+            "issue_score": 0.2,
+            "issue_importance": 1.5
         }
     }
 ]
@@ -14577,65 +14595,10 @@ campaignTrail_temp.answer_score_state_json = [
     },
     {
         "model": "campaign_trail.answer_score_state",
-        "pk": 12807,
-        "fields": {
-            "answer": 12801,
-            "state": 212,
-            "candidate": 78,
-            "affected_candidate": 78,
-            "state_multiplier": 0.002
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
         "pk": 12813,
         "fields": {
             "answer": 12808,
             "state": 195,
-            "candidate": 78,
-            "affected_candidate": 78,
-            "state_multiplier": 0.002
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12814,
-        "fields": {
-            "answer": 12808,
-            "state": 208,
-            "candidate": 78,
-            "affected_candidate": 78,
-            "state_multiplier": 0.002
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12815,
-        "fields": {
-            "answer": 12808,
-            "state": 209,
-            "candidate": 78,
-            "affected_candidate": 78,
-            "state_multiplier": 0.002
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12816,
-        "fields": {
-            "answer": 12808,
-            "state": 212,
-            "candidate": 78,
-            "affected_candidate": 78,
-            "state_multiplier": 0.002
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_state",
-        "pk": 12817,
-        "fields": {
-            "answer": 12808,
-            "state": 220,
             "candidate": 78,
             "affected_candidate": 78,
             "state_multiplier": 0.002
@@ -25816,6 +25779,105 @@ campaignTrail_temp.answer_score_state_json = [
             "affected_candidate": 77,
             "state_multiplier": -0.00225
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128011,
+        "fields": {
+            "answer": 12808,
+            "state": 186,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128012,
+        "fields": {
+            "answer": 12808,
+            "state": 192,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128013,
+        "fields": {
+            "answer": 12808,
+            "state": 196,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128014,
+        "fields": {
+            "answer": 12808,
+            "state": 206,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128015,
+        "fields": {
+            "answer": 12808,
+            "state": 207,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128016,
+        "fields": {
+            "answer": 12808,
+            "state": 214,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128017,
+        "fields": {
+            "answer": 12808,
+            "state": 221,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128018,
+        "fields": {
+            "answer": 12808,
+            "state": 224,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 128019,
+        "fields": {
+            "answer": 12808,
+            "state": 231,
+            "candidate": 77,
+            "affected_candidate": 77,
+            "state_multiplier": 0.007
+        }
     }
 ]
 
@@ -26258,7 +26320,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 3345,
             "candidate": 78,
-            "answer_feedback": "Hillary is shocked and offended by your remarks, leading to her endorsing McCain the next day. This decision attracts the majority of her supporters from the primaries. Good job, you dumbass."
+            "answer_feedback": "Fair enough, no one really cares about what you have in mind for your cabinet right now, so no harm no foul. Though some of your advisors are disappointed in you shutting down this idea."
         }
     },
     {
@@ -26267,7 +26329,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 12801,
             "candidate": 78,
-            "answer_feedback": "You and Hillary talk on the phone, and she got mad that you were trying to “bribe her” for her endorsement. Ultimately, she ends up offering a late and muted endorsement."
+            "answer_feedback": "For a Democrat, Wesley is pretty hawkish. As a result, liberals don't respond fondly to your announcement, but everyone else applauds him as a wise choice."
         }
     },
     {
@@ -26638,199 +26700,20 @@ campaignTrail_temp.answer_feedback_json = [
             "candidate": 78,
             "answer_feedback": "When campaigning near the beaches of these states, you always get a weird sense of peace and can't help staring out at the distance of the ocean. You should cherish these moments, as being President is anything but peaceful."
         }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 128020,
+        "fields": {
+            "answer": 128009,
+            "candidate": 77,
+            "answer_feedback": "Hillary thanks you for the gesture, and she says she would prefer to be Secretary of State. In other news, your announcement that she will be a cabinet member has been well received by most people."
+        }
     }
 ]
 
-campaignTrail_temp.candidate_image_url = "https://i.postimg.cc/QCSLfSTv/biden08portrait.png";
-campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/sD2vPLFJ/biden08-button.png";
-campaignTrail_temp.running_mate_state_id = '226';
-campaignTrail_temp.candidate_last_name = 'Biden';
 
-let ohnobro = 0;
 
-campaignTrail_temp.cyoa = true
+campaignTrail_temp.jet_data = [{}
+]
 
-const qMap = new Map(campaignTrail_temp.questions_json.map(q => [q.pk, q]));
-const tunnel = (pk) => qMap.get(pk);
-
-cyoAdventure = function(a) {	
-    const ans = e.player_answers[e.player_answers.length - 1];
-	e.noCounter = campaignTrail_temp.player_answers.length;
-
-	if (ans === 3398 || ans === 3411 || ans === 3334 || ans === 13982) {
-		ohnobro++;
-	}
- 
-    if (ans === 3318) {
-		campaignTrail_temp.running_mate_image_url = 'https://i.postimg.cc/MHrn809Q/timkainebiden08.png';
-		campaignTrail_temp.running_mate_last_name = 'Kaine';
-		
-		if (!document.getElementById("kaine-style")) {
-			const style = document.createElement("style");
-			style.id = "kaine-style";
-			style.textContent =
-			`#campaign_sign {
-				background-image: url("https://i.postimg.cc/4nC4TWdV/IMG-9854.png");
-				background-size: contain;
-				background-repeat: no-repeat;
-				border-color: #c9c9c9;    
-				border-width: .01em;
-				margin: 0 auto;
-				background-position: center;
-				width: 100%; 
-				height: 128px;
-				margin: 0 auto;
-				margin-left: -0.033em;
-				margin-right: -0.033em;
-			  }
-			#campaign_sign p {
-				color: rgb(0 0 0 / 0%);
-				visibility: hidden;
-			}`
-			document.head.appendChild(style);
-		}
-    }
-	
-	if (ohnobro >= 3) {
-		const endingQuestion = tunnel(14093);
-		if (endingQuestion) {
-			campaignTrail_temp.questions_json[5] = endingQuestion;
-		}
-	}
-	
-	if (ans === 14094 || ans === 3502) {
-		const nahidlose = tunnel(14096);
-		if (nahidlose) {
-			campaignTrail_temp.question_number = 27;
-			campaignTrail_temp.questions_json[campaignTrail_temp.question_number] = nahidlose;
-			campaignTrail_temp.corQuestion = true;
-		}
-		
-		const candId = e.candidate_id;
-        const cand = e.candidate_json.find(p => p.pk === candId);
-		if (cand?.fields) {
-			cand.fields.first_name = "Hillary";
-			cand.fields.last_name = "Clinton";
-			cand.fields.color_hex = "#2b547e";
-		}
-		
-		// If Hillary shift the other colors a wee bit!!
-		const hillaryAltColors = {
-			"mccain": "#F43300",
-			"barr": "#F47600",
-			"nader": "#2BA81A"
-		};
-		
-		const applyAltColors = (list) => {
-			if (!Array.isArray(list)) return;
-			for (const c of list) {
-				const ln = c?.fields?.last_name;
-				if (!ln) continue;
-				const key = String(ln).trim().toLowerCase();
-				const hex = hillaryAltColors[key];
-				if (hex) c.fields.color_hex = hex;
-			}
-		};
-		
-		applyAltColors(e.candidate_json);
-		applyAltColors(campaignTrail_temp.candidate_json);
-		
-		
-		Object.assign(campaignTrail_temp, {
-			candidate_last_name: 'Clinton',
-			candidate_image_url: 'https://file.garden/aNtAfG887DiA_7lO/2008Biden/clinton.jpg',
-			running_mate_image_url: 'https://file.garden/aNtAfG887DiA_7lO/2008Biden/dodd.jpg',
-			running_mate_last_name: 'Dodd',
-			running_mate_state_id: '187'
-		});
-		
-		if (!document.getElementById("dodd-style")) {
-			const style = document.createElement("style");
-			style.id = "dodd-style";
-			style.textContent =
-			`#campaign_sign {
-				background-color: #fff;
-				background-image: url("https://file.garden/aNtAfG887DiA_7lO/2008Biden/clintondodd.png");
-				background-size: contain;
-				background-repeat: no-repeat;
-				border-color: #c9c9c9;    
-				border-width: .01em;
-				margin: 0 auto;
-				background-position: center;
-				width: 100%; 
-				height: 128px;
-				margin: 0 auto;
-				margin-left: -0.033em;
-				margin-right: -0.033em;
-			  }
-			#campaign_sign p {
-				color: rgb(0 0 0 / 0%);
-				visibility: hidden;
-			}`
-			document.head.appendChild(style);
-		}		
-	}
-	
-	if (ans === 14097 || ans === 14099 || ans === 14100 || ans === 14101) {
-		const fields = e.global_parameter_json?.[0]?.fields;
-		if (fields) {
-			const idx = campaignTrail_temp.question_number;
-			fields.question_count = idx + 1;
-
-			fields.global_variance = 0.005;
-			fields.state_variance = 0.002;
-		}
-		
-		const blueStates = new Set([
-            "WA", "OR", "CA", "NV", "MT", "CO", "NM", "HI", 
-            "MN", "IA", "MO", "AR", "WI", "IL", "MI", "IN", 
-            "OH", "PA", "NY", "VT", "NH", "ME", "MA", "RI", 
-            "CT", "NJ", "DE", "MD", "DC", "VA", "NC", "FL"
-        ]);
-
-        const stateAbbrMap = new Map(e.states_json.map(s => [s.pk, s.fields.abbr]));
-
-        e.candidate_state_multiplier_json.forEach(mod => {
-            if (mod.fields.candidate === 78) {
-                const abbr = stateAbbrMap.get(mod.fields.state);
-                
-                let mult = blueStates.has(abbr) ? 1.20 : 0.85;
-
-                mult += (Math.random() * 0.06) - 0.03;
-
-                if (["MT", "IN", "AR", "MO", "NC"].includes(abbr)) {
-                    mult += 0.2575; 
-                }
-
-                mod.fields.state_multiplier = mult;
-            }
-        });
-		
-	}
-	
-}
-
-if (!document.getElementById("main-style")) {
-const style = document.createElement("style");
-style.id = "main-style";
-style.textContent =
-`#campaign_sign {
-    background-image: url("https://i.postimg.cc/BZR26sPC/IMG-98541.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-color: #c9c9c9;    
-    border-width: .01em;
-    margin: 0 auto;
-    background-position: center;
-    width: 100%; 
-    height: 128px;
-    margin: 0 auto;
-    margin-left: -0.033em;
-    margin-right: -0.033em;
-  }
-#campaign_sign p {
-    color: rgb(0 0 0 / 0%);
-	visibility: hidden;
-}`
-document.head.appendChild(style);
-}
