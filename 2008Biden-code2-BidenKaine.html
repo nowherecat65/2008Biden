@@ -808,6 +808,14 @@ campaignTrail_temp.answers_json = [
     },
     {
         "model": "campaign_trail.answer",
+        "pk": 138009,
+        "fields": {
+            "question": 382,
+            "description": "What about an internet documentary on YouTube or something? It'll call McCain out for his wrongdoings, and I know the young folk use YouTube, so that could help us with the youth vote."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
         "pk": 13815,
         "fields": {
             "question": 13814,
@@ -8068,6 +8076,36 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 78,
             "affected_candidate": 79,
             "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13810,
+        "fields": {
+            "answer": 138009,
+            "candidate": 78,
+            "affected_candidate": 77,
+            "global_multiplier": -0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13811,
+        "fields": {
+            "answer": 138009,
+            "candidate": 78,
+            "affected_candidate": 78,
+            "global_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 13812,
+        "fields": {
+            "answer": 138009,
+            "candidate": 78,
+            "affected_candidate": 79,
+            "global_multiplier": -0.003
         }
     },
     {
@@ -26722,6 +26760,15 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
+        "pk": 13809,
+        "fields": {
+            "answer": 138009,
+            "candidate": 78,
+            "answer_feedback": "The mini documentary is... aggressive to say the least, but it gets a lot of attention from YouTube users, and you eventually see a very slight uptick with young voters."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
         "pk": 13819,
         "fields": {
             "answer": 13815,
@@ -26889,7 +26936,9 @@ campaignTrail_temp.running_mate_state_id = '226';
 campaignTrail_temp.candidate_last_name = 'Biden';
 
 let ohnobro = 0;
-let hilltakover = false;
+let hilltakeover = false;
+var songChange = 0;
+
 
 campaignTrail_temp.cyoa = true
 
@@ -26942,7 +26991,7 @@ cyoAdventure = function(a) {
 	}
 	
 	if (ans === 14094 || ans === 3502) {
-        hilltakover = true;
+        hilltakeover = true;
 		const nahidlose = tunnel(14096);
 		if (nahidlose) {
 			campaignTrail_temp.question_number = 27;
