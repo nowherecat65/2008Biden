@@ -27107,6 +27107,23 @@ campaignTrail_temp.jet_data = [{}
 
 endingPicker = (out, totv, aa, quickstats) => {
 
+
+// Fix invisible ending header text (e.g., "Higher and Higher")
+if (!document.getElementById("ending-h3-style")) {
+    const style = document.createElement("style");
+    style.id = "ending-h3-style";
+    style.textContent = `
+        h3 {
+            color: #000 !important;
+            font-weight: 700 !important;
+            font-size: 24px !important;
+            line-height: 1.15 !important;
+            margin: 0.35em 0 0.65em 0 !important;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
 used=false
 
 // Astro's Ending Template
