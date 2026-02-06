@@ -27715,9 +27715,7 @@ const qMap = new Map(campaignTrail_temp.questions_json.map(q => [q.pk, q]));
 const tunnel = (pk) => qMap.get(pk);
 
 /* =========================================================
-   Delayed VP Selection (King92-style)
-   - Shows a VP picker AFTER Question 6 (PK 345)
-   - Uses FULL running mate list from 2008Biden-code1
+		vp selector ported from MLK92
    ========================================================= */
 
 campaignTrail_temp.vpMenuShown = campaignTrail_temp.vpMenuShown || false;
