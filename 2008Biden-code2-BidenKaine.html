@@ -27644,28 +27644,25 @@ campaignTrail_temp.candidate_last_name = 'Biden';
     let matches = [];
 
     tooltipList.forEach((tooltip, index) => {
-        // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
        let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
 
         let match;
         while ((match = regex.exec(str)) !== null) {
             matches.push({
-                start: match.index + (match[0].startsWith('“') ? 1 : 0), // Adjust for potential starting “
+                start: match.index + (match[0].startsWith('“') ? 1 : 0),
                 end: match.index + match[0].length - (match[0].endsWith('”') ? 1 : 0) - (match[2] ? 1 : 0), 
                 tooltipIndex: index
             });
         }
     });
 
-    // Sort by starting position; if two start at the same position, longer match comes first
     matches.sort((a, b) => a.start - b.start || b.end - b.start - (a.end - a.start));
 
-    // Filter out overlaps
     for (let i = 0; i < matches.length - 1; ) {
         if (matches[i + 1].start < matches[i].end) {
-            matches.splice(i + 1, 1); // Remove the next match since it overlaps
+            matches.splice(i + 1, 1);
         } else {
-            i++; // Move to next match
+            i++;
         }
     }
 
@@ -27683,7 +27680,7 @@ function applyTooltips(str) {
         lastIndex = match.end;
     });
 
-    result += str.slice(lastIndex); // Add the remainder of the original string
+    result += str.slice(lastIndex);
     return result;
 }
 
@@ -27692,7 +27689,7 @@ function applyTooltipsToObject(obj) {
         if (typeof obj[key] === 'string') {
             obj[key] = applyTooltips(obj[key]);
         } else if (typeof obj[key] === 'object') {
-            applyTooltipsToObject(obj[key]); // Recursive call
+            applyTooltipsToObject(obj[key]);
         }
     }
 }
@@ -27710,20 +27707,16 @@ campaignTrail_temp.cyoa = true
 const qMap = new Map(campaignTrail_temp.questions_json.map(q => [q.pk, q]));
 const tunnel = (pk) => qMap.get(pk);
 
-/* =========================================================
-		vp selector ported from MLK92
-   ========================================================= */
 
 campaignTrail_temp.vpMenuShown = campaignTrail_temp.vpMenuShown || false;
 campaignTrail_temp.vpSelected = campaignTrail_temp.vpSelected || false;
 
-/* --- Force-skip the built-in VP picker (usually shown at game start) --- */
+
 if (!campaignTrail_temp._delayedVPObserverInstalled) {
   campaignTrail_temp._delayedVPObserverInstalled = true;
   const vpObs = new MutationObserver(() => {
     try {
       const btn = document.getElementById("running_mate_id_button");
-      // Only auto-click the site's built-in VP picker button, never our custom one.
       if (btn && btn.dataset && btn.dataset.customSwitcher !== "true" && !campaignTrail_temp.vpSelected) {
         btn.click();
       }
@@ -27732,9 +27725,8 @@ if (!campaignTrail_temp._delayedVPObserverInstalled) {
   vpObs.observe(document.documentElement, { childList: true, subtree: true });
 }
 
-/* --- Helpers --- */
+
 const _getGameWindow = () => {
-  // In many TCT builds, `gameWindow` exists but is not on `window` if declared with let/const.
   try {
     if (typeof gameWindow !== "undefined" && gameWindow) return gameWindow;
   } catch (_) {}
@@ -27746,9 +27738,7 @@ campaignTrail_temp._vpChangeGameDisp = (hide) => {
   if (!gw || !gw.children) return;
 
   Array.from(gw.children).forEach(el => {
-    // Never hide the header.
     if (el.classList && el.classList.contains("game_header")) return;
-    // Never hide our injected VP screen (if present).
     if (el.id === "inner_window_4" && el.dataset && el.dataset.customVp === "true") return;
 
     if (hide) {
@@ -27766,7 +27756,6 @@ const _getPotRunMat = () => {
   const e = campaignTrail_temp;
   if (!Array.isArray(e.running_mate_json) || !Array.isArray(e.candidate_json)) return [];
 
-  // Deduplicate all running mates for this candidate.
   const pks = [...new Set(
     e.running_mate_json
       .filter(rm => rm && rm.fields && rm.fields.candidate === e.candidate_id)
@@ -27824,17 +27813,12 @@ const _patchVPAnnouncementQ346 = (vp) => {
 
   const qa = VP_QA[last] || null;
 
-  // Update question 346 text.
   if (qa && qa.q) {
     q.fields.description = qa.q;
   } else {
-    // Fallback: keep existing description (don’t overwrite it with generic filler).
-    // (No-op)
   }
 
-  // Update answers for question 346 to match the selected VP.
   if (qa && qa.a1 && qa.a2) {
-    // Remove any existing answers tied to question 346.
     if (Array.isArray(e.answers_json)) {
       e.answers_json = e.answers_json.filter(a => !(a && a.fields && a.fields.question === 346));
       e.answers_json.push(
@@ -27856,28 +27840,22 @@ const _patchVPDebateQ360 = (vp) => {
   const replaceForVP = (s) => {
     if (typeof s !== "string" || !s) return s;
 
-    // Replace only Kaine’s name tokens; avoid touching "Tim Pawlenty".
     let out = s;
 
-    // Most specific first.
     out = out.replace(/\bTim Kaine\b/g, full);
 
-    // Common phrasing in this mod.
     out = out.replace(/\bGovernor Kaine\b/g, `Governor ${last}`);
 
-    // Last-name-only references.
     out = out.replace(/\bKaine\b/g, last);
 
     return out;
   };
 
-  // Patch the VP debate question (PK 360).
   const q = (Array.isArray(e.questions_json) ? e.questions_json : []).find(x => x && x.pk === 360);
   if (q && q.fields && typeof q.fields.description === "string") {
     q.fields.description = replaceForVP(q.fields.description);
   }
 
-  // Patch all answers that belong to question 360.
   const debateAnswerPks = new Set();
   if (Array.isArray(e.answers_json)) {
     for (const a of e.answers_json) {
@@ -27888,7 +27866,6 @@ const _patchVPDebateQ360 = (vp) => {
     }
   }
 
-  // Patch answer feedback tied to those answers.
   if (debateAnswerPks.size && Array.isArray(e.answer_feedback_json)) {
     for (const fb of e.answer_feedback_json) {
       if (fb && fb.fields && debateAnswerPks.has(fb.fields.answer) && typeof fb.fields.answer_feedback === "string") {
@@ -27907,7 +27884,7 @@ const _updateCampaignSign = () => {
   if (pic && e.running_mate_image_url) pic.setAttribute("src", e.running_mate_image_url);
 };
 
-/* --- VP Picker (UI + wiring) --- */
+
 campaignTrail_temp.vpSwitcher = () => {
   const e = campaignTrail_temp;
 
@@ -27923,11 +27900,9 @@ campaignTrail_temp.vpSwitcher = () => {
     return _safeQuestionRender();
   }
 
-  // Remove any prior injected VP screen (safety).
   const old = document.getElementById("inner_window_4");
   if (old && old.dataset && old.dataset.customVp === "true") old.remove();
 
-  // Hide the rest of the UI so the picker appears in the correct "slot".
   e._vpChangeGameDisp(true);
 
   const vp_screen = document.createElement("div");
@@ -27935,7 +27910,6 @@ campaignTrail_temp.vpSwitcher = () => {
   vp_screen.classList.add("inner_window_w_desc");
   vp_screen.dataset.customVp = "true";
 
-  // Build dropdown.
   let options = "";
   for (const c of pot) {
     const name = `${c.fields.first_name} ${c.fields.last_name}`.trim();
@@ -28012,7 +27986,6 @@ campaignTrail_temp.vpSwitcher = () => {
 
     const vp = pot[i];
 
-    // Set running mate for the engine/UI.
     e.running_mate_last_name = vp.fields.last_name;
     e.running_mate_image_url = vp.fields.image_url;
     e.selected_running_mate = vp;
@@ -28022,7 +27995,6 @@ campaignTrail_temp.vpSwitcher = () => {
     _patchVPAnnouncementQ346(vp);
     _patchVPDebateQ360(vp);
 
-    // Clean up and continue.
     e.vpSelected = true;
     vp_screen.remove();
     e._vpChangeGameDisp(false);
@@ -28030,15 +28002,10 @@ campaignTrail_temp.vpSwitcher = () => {
   });
 };
 
-/* =========================================================
-   End Delayed VP Selection
-   ========================================================= */
 
 cyoAdventure = function(a) {	
     const ans = e.player_answers[e.player_answers.length - 1];
 
-  // Delayed VP picker: fire immediately after the player answers Q6 (PK 345).
-  // We key off the just-answered question (by index + PK) so it doesn't drift if question_number is offset.
   const _justAnsweredIdx = campaignTrail_temp.player_answers.length - 1;
   const _justAnsweredQ = campaignTrail_temp.questions_json && campaignTrail_temp.questions_json[_justAnsweredIdx];
   if (_justAnsweredQ && _justAnsweredQ.pk === 345 && !campaignTrail_temp.vpMenuShown) {
@@ -28293,7 +28260,7 @@ cyoAdventure = function(a) {
 		}
 	}
 	
-	if (ans === 14094 || ans === 3502) {
+	if (ans === 14094 || ans === 3502 || ans === 12295) {
         hilltakeover = true;
 		const nahidlose = tunnel(14096);
 		if (nahidlose) {
@@ -28410,7 +28377,6 @@ campaignTrail_temp.jet_data = [{}
 
 endingPicker = (out, totv, aa, quickstats) => {
 
-// Fix invisible ending header text (e.g., "Higher and Higher")
 if (!document.getElementById("ending-h3-style")) {
     const style = document.createElement("style");
     style.id = "ending-h3-style";
