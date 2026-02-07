@@ -27629,8 +27629,6 @@ campaignTrail_temp.answer_feedback_json = [
     }
 ]
 
-
-
 campaignTrail_temp.jet_data = [{
     "nicknames": {},
     "banner_data": {},
@@ -27648,7 +27646,6 @@ campaignTrail_temp.candidate_last_name = 'Biden';
     tooltipList.forEach((tooltip, index) => {
         // Adjust the regex to match searchString potentially surrounded by “ and followed by optional punctuation
        let regex = new RegExp(`(?<=\\b|\\s|^|“)${tooltip.searchString}(?=[.,;!?]?\\b|\\s|”|$)`, 'g');
-
 
         let match;
         while ((match = regex.exec(str)) !== null) {
@@ -27707,7 +27704,6 @@ applyTooltipsToObject(campaignTrail_temp.answer_feedback_json);
 let ohnobro = 0;
 let hilltakeover = false;
 var songChange = 0;
-
 
 campaignTrail_temp.cyoa = true
 
@@ -27849,6 +27845,59 @@ const _patchVPAnnouncementQ346 = (vp) => {
   }
 };
 
+const _patchVPDebateQ360 = (vp) => {
+  const e = campaignTrail_temp;
+  if (!vp || !vp.fields) return;
+
+  const first = String(vp.fields.first_name || "").trim();
+  const last = String(vp.fields.last_name || "").trim();
+  const full = `${first} ${last}`.trim();
+
+  const replaceForVP = (s) => {
+    if (typeof s !== "string" || !s) return s;
+
+    // Replace only Kaine’s name tokens; avoid touching "Tim Pawlenty".
+    let out = s;
+
+    // Most specific first.
+    out = out.replace(/\bTim Kaine\b/g, full);
+
+    // Common phrasing in this mod.
+    out = out.replace(/\bGovernor Kaine\b/g, `Governor ${last}`);
+
+    // Last-name-only references.
+    out = out.replace(/\bKaine\b/g, last);
+
+    return out;
+  };
+
+  // Patch the VP debate question (PK 360).
+  const q = (Array.isArray(e.questions_json) ? e.questions_json : []).find(x => x && x.pk === 360);
+  if (q && q.fields && typeof q.fields.description === "string") {
+    q.fields.description = replaceForVP(q.fields.description);
+  }
+
+  // Patch all answers that belong to question 360.
+  const debateAnswerPks = new Set();
+  if (Array.isArray(e.answers_json)) {
+    for (const a of e.answers_json) {
+      if (a && a.fields && a.fields.question === 360 && typeof a.fields.description === "string") {
+        a.fields.description = replaceForVP(a.fields.description);
+        debateAnswerPks.add(a.pk);
+      }
+    }
+  }
+
+  // Patch answer feedback tied to those answers.
+  if (debateAnswerPks.size && Array.isArray(e.answer_feedback_json)) {
+    for (const fb of e.answer_feedback_json) {
+      if (fb && fb.fields && debateAnswerPks.has(fb.fields.answer) && typeof fb.fields.answer_feedback === "string") {
+        fb.fields.answer_feedback = replaceForVP(fb.fields.answer_feedback);
+      }
+    }
+  }
+};
+
 const _updateCampaignSign = () => {
   const e = campaignTrail_temp;
   const sign = document.getElementById("campaign_sign");
@@ -27971,6 +28020,7 @@ campaignTrail_temp.vpSwitcher = () => {
 
     _updateCampaignSign();
     _patchVPAnnouncementQ346(vp);
+    _patchVPDebateQ360(vp);
 
     // Clean up and continue.
     e.vpSelected = true;
@@ -27983,7 +28033,6 @@ campaignTrail_temp.vpSwitcher = () => {
 /* =========================================================
    End Delayed VP Selection
    ========================================================= */
-
 
 cyoAdventure = function(a) {	
     const ans = e.player_answers[e.player_answers.length - 1];
@@ -28128,7 +28177,6 @@ campaignTrail_temp.jet_data = [{}
 ]
 
 endingPicker = (out, totv, aa, quickstats) => {
-
 
 // Fix invisible ending header text (e.g., "Higher and Higher")
 if (!document.getElementById("ending-h3-style")) {
