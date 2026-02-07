@@ -528,6 +528,36 @@ document.body.background = "https://paul-david-wellstone.neocities.org/bgbiden.g
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#FDF8F8";
 
+document.styleSheets[0].insertRule(".game_header {border-color:#808fa9!important;}", 0);
+document.styleSheets[0].insertRule("#game_window {border-style: solid!important; border-width: .25em!important; border-radius: 3px!important; border-color:#808fa9!important;}", 0);
+document.styleSheets[0].insertRule(".inner_window_w_desc {border-color: white !important;}", 0);
+
+document.styleSheets[0].insertRule("#election_image img, #candidate_image, #running_mate_image, #candidate_pic, #running_mate_pic, #visit_window img, .person_image, #recommended_reading_box img, #election_night_window img, #new_game_window img, #feedback_window img, #header {border-style: solid!important; border-width: .125em!important; border-color:#243956!important;}", 0);
+
+document.styleSheets[0].insertRule("#election_description_window, #running_mate_description_window, #candidate_description_window, #inner_window_1, #map_container, #opponent_selection_description_window, .inner_window_question, .inner_window_sign_display, #state_info, #overall_result, #state_result, #recommended_reading_box, #visit_window, #election_night_window, #new_game_window, #feedback_window, table, td, th {border-style: solid!important; border-width: .125em!important; border-radius: 3px!important; border-color:#808fa9!important;  background-color:#FFF2F2!important;}", 0);
+
+document.styleSheets[0].insertRule("table, td, th {border-style: solid!important; border-width: .125em!important; border-radius: 3px!important; border-color:#a9b6cb!important;  background-color:#FFF2F2!important;}", 0);
+
+document.styleSheets[0].insertRule(".footer, .content_single, hr {border-color:#a9b6cb!important;}", 0);
+
+document.styleSheets[0].insertRule(".container {border-style: solid!important; border-width: .2em!important; border-radius: 3px!important; border-color:#494949!important;}", 0);
+
+document.styleSheets[0].insertRule("a, #site_credits p {color:#a9b6cb!important;}", 0);
+
+document.styleSheets[0].insertRule(".campaign_trail_start_emphasis, #menu_container, #overall_result_container, #state_result_container {background-color:transparent!important;}", 0);
+
+document.styleSheets[0].insertRule(".inner_window_question h3, #state_info h3, #overall_result h3, #state_result h3, #visit_window h3, #election_night_window h3, #new_game_window h3, #feedback_window h3 {border-style: solid!important; border-width: .125em!important; border-radius: 1.5px!important; border-color: #a9b6cb!important;color: #6790d3!important;background: linear-gradient( #FFF2F2, #FDF8F8 )!important;}", 0);
+
+document.styleSheets[0].insertRule(" h3, h1, b, strong, #credits, #running_mate_description_window li, #candidate_description_window li {color: #494949!important;}", 0);
+
+document.styleSheets[0].insertRule(".campaign_trail_start_emphasis, #menu_container, #overall_result_container, #state_result_container {background-color:transparent!important;}", 0);
+
+document.styleSheets[0].insertRule(" select, button {border-style: solid!important; border-width: .125em!important; border-radius: 3px!important; color:#6790d3!important; border-color:#808fa9!important; background: linear-gradient( #FFF2F2, #FDF8F8 )!important; box-shadow: 0 0 10px rgba(73, 73, 73, 0.45)!important;}", 0);
+
+document.styleSheets[0].insertRule("#game_window{ height:41em !important;}", 0);
+document.styleSheets[0].insertRule("#main_content_area { height:81% !important;}", 0);
+document.styleSheets[0].insertRule(".inner_window_question{ margin:0.25em 0.25em 0.75em !important;}", 0);
+
 document.head.innerHTML += `<link
 	rel="stylesheet"
 	href="https://unpkg.com/7.css@0.21.1/dist/7.css"
@@ -637,6 +667,8 @@ input[type=radio]+label {
         #election_image img, #candidate_image, #running_mate_image, #candidate_pic, #running_mate_pic, #visit_window img, .person_image, #recommended_reading_box img, #election_night_window img, #new_game_window img, #feedback_window img, #header {
             border: .125em #243956 solid;
         }
+
+
 		#election_description_window, #running_mate_description_window, #candidate_description_window, #inner_window_1, #map_container, #opponent_selection_description_window, .inner_window_question, .inner_window_sign_display, #state_info, #overall_result, #state_result, #recommended_reading_box, #visit_window, #election_night_window, #new_game_window, #feedback_window  {
             border: .3em #494949 double;
 			border-radius: 5px;
@@ -651,6 +683,44 @@ input[type=radio]+label {
 		blockquote  {
             background: linear-gradient( 140deg, #FFF2F2, #FDF8F8 );
         }
+				
+        .mytooltip .mytooltiptext {
+            width: 240px;
+            background: #c0c4d5; 
+            color: #000000;
+            text-align: left;
+            padding: 5px;
+            padding-top: 7.5px;
+            position: absolute;
+            z-index: 99;
+            bottom: 101%;
+            left: 50%;
+            margin-left: -130px;
+            margin-bottom: 3px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: .185em double #262626;
+            pointer-events: none;
+            font-size: 10.833px !important;
+            line-height: 18.72px !important;
+            font-style: normal !important;
+        }
+
+        .mytooltip .mytooltiptext img {
+            max-width: 240px;
+            height: auto;
+            border: .125em #243956 solid;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.25s;
+        }
+
+        .mytooltip:hover .mytooltiptext {
+            opacity: 1;
+            transition-delay: 0.25s;
+        }
 
 	`;
 	var styleElem = document.createElement('style');
@@ -662,6 +732,54 @@ input[type=radio]+label {
 }
 
 addDynamicCSS();
+
+tooltipList = [
+{searchString: "Hillary Clinton", explanationText: "<img src=https://i.postimg.cc/NGnGTKn3/IMG-9626.jpg> My main challenger. I hope we can prevent the Clinton’s comeback."},
+{searchString: "Hillary", explanationText: "<img src=https://i.postimg.cc/NGnGTKn3/IMG-9626.jpg> My main challenger. I hope we can prevent the Clinton’s comeback."},
+{searchString: "George W. Bush", explanationText: "<img src=https://i.postimg.cc/nLTpLr75/IMG-9627.webp> President Dubya. One of the worst in history."}, 
+{searchString: "Dubya", explanationText: "<img src=https://i.postimg.cc/nLTpLr75/IMG-9627.webp> President George W. Bush. One of the worst in history."}, 
+{searchString: "Dick Cheney", explanationText: "<img src=https://i.postimg.cc/02m6yGQ1/IMG-9628.webp> A war criminal at his very worst."},
+{searchString: "Cheney", explanationText: "<img src=https://i.postimg.cc/02m6yGQ1/IMG-9628.webp> A war criminal at his very worst."},
+{searchString: "John McCain", explanationText: "<img src=https://i.postimg.cc/BZPbm52H/IMG-9629.webp> One of my best friends, and now he’s my rival in the election."},
+{searchString: "McCain", explanationText: "<img src=https://i.postimg.cc/BZPbm52H/IMG-9629.webp> One of my best friends, and now he’s my rival in the election."},
+{searchString: "Beau", explanationText: "<img src=https://i.postimg.cc/L89HFjgC/IMG-9630.webp> Following in my footsteps in politics. Definitely makes me a proud father."},
+{searchString: "Beau Biden", explanationText: "<img src=https://i.postimg.cc/L89HFjgC/IMG-9630.webp> Following in my footsteps in politics. Definitely makes me a proud father."},
+{searchString: "Chuck Graham", explanationText: "<img src=https://i.postimg.cc/j2Ybgfr6/IMG-9631.webp> ''Stand up, Chuck. Let ‘em see ya!''"},
+{searchString: "Ted Kennedy", explanationText: "<img src=https://i.postimg.cc/nrJyYtvq/IMG-9641.webp> A true veteran in the Senate."},
+{searchString: "Kennedy", explanationText: "<img src=https://i.postimg.cc/nrJyYtvq/IMG-9641.webp> A true veteran in the Senate."},
+{searchString: "Jill Biden", explanationText: "<img src=https://i.postimg.cc/kgpLYSQQ/IMG-9642.webp> Can’t take my eyes off of her."},
+{searchString: "Jill", explanationText: "<img src=https://i.postimg.cc/kgpLYSQQ/IMG-9642.webp> Can’t take my eyes off of her."},
+{searchString: "Joe Lieberman", explanationText: "<img src=https://i.postimg.cc/63NjFfy6/IMG-9646.webp> McCain’s husband."},
+{searchString: "Lieberman", explanationText: "<img src=https://i.postimg.cc/63NjFfy6/IMG-9646.webp> McCain’s husband."},
+{searchString: "Bill Clinton", explanationText: "<img src=https://i.postimg.cc/4xDBhQvx/IMG-9770.webp> President Bubba. I voted to acquit him after being unfaithful to Hillary, and I have no regrets."},
+{searchString: "Tim Pawlenty", explanationText: "<img src=https://i.postimg.cc/GpPJTwmR/IMG-9775.webp> Complete idiot."},
+{searchString: "Pawlenty", explanationText: "<img src=https://i.postimg.cc/GpPJTwmR/IMG-9775.webp> Complete idiot."},
+{searchString: "Barack Obama", explanationText: "<img src=https://i.postimg.cc/DwkXrjNH/IMG-9787.webp> Articulate, bright, clean and a nice-looking guy, that's a storybook, man!"},
+{searchString: "Obama", explanationText: "<img src=https://i.postimg.cc/DwkXrjNH/IMG-9787.webp> Articulate, bright, clean and a nice-looking guy, that's a storybook, man!"},
+{searchString: "Kathleen Sebelius", explanationText: "<img src=https://i.postimg.cc/ZqYFNsBq/IMG-9795.webp> Bipartisanship as a person."},
+{searchString: "Sebelius", explanationText: "<img src=https://i.postimg.cc/ZqYFNsBq/IMG-9795.webp> Bipartisanship as a person."},
+{searchString: "Evan Bayh", explanationText: "<img src=https://i.postimg.cc/ydgRhMV7/IMG-9796.webp> Works his damn hardest on that floor, and I respect that."},
+{searchString: "Bayh", explanationText: "<img src=https://i.postimg.cc/ydgRhMV7/IMG-9796.webp> Works his damn hardest on that floor, and I respect that."},
+{searchString: "Tim Kaine", explanationText: "<img src=https://i.postimg.cc/Y9W4LQ3p/IMG-9797.webp> Virginia needed him, now I need him."},
+{searchString: "Kaine", explanationText: "<img src=https://i.postimg.cc/Y9W4LQ3p/IMG-9797.webp> Virginia needed him, now I need him."},
+{searchString: "Ted Strickland", explanationText: "<img src=https://i.postimg.cc/CLNR8hjQ/IMG-9988.webp> Governor of Ohio. He’s a strong campaigner, as we saw in 2006."},
+{searchString: "Strickland", explanationText: "<img src=https://i.postimg.cc/CLNR8hjQ/IMG-9988.webp> Governor of Ohio. He’s a strong campaigner, as we saw in 2006."},
+{searchString: "John Edwards", explanationText: "<img src=https://i.postimg.cc/xTdV5xns/John-Edwards-LAFund-Raiser.jpg> A sleazy-slime ball, who doesn't know a lick about policy."},
+{searchString: "Edwards", explanationText: "<img src=https://i.postimg.cc/xTdV5xns/John-Edwards-LAFund-Raiser.jpg> A sleazy-slime ball, who doesn't know a lick about policy."},
+{searchString: "Michael Dukakis", explanationText: "<img src=https://i.postimg.cc/Gt57qjjb/dukakis.webp> Our last <i>big</i> loss."},
+{searchString: "Dukakis", explanationText: "<img src=https://i.postimg.cc/Gt57qjjb/dukakis.webp> Our last <i>big</i> loss."},
+{searchString: "Ronald Reagan", explanationText: "<img src=https://i.postimg.cc/jjtX69rN/16-reagan.avif> President Hollywood. That was the only thing that he was meant for."},
+{searchString: "Reagan", explanationText: "<img src=https://i.postimg.cc/jjtX69rN/16-reagan.avif> President Hollywood. That was the only thing that he was meant for."},
+{searchString: "Buchanan", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/6/6f/Patrickjbuchanan.JPG> Bigot."},
+{searchString: "Pat Buchanan", explanationText: "<img src=https://upload.wikimedia.org/wikipedia/commons/6/6f/Patrickjbuchanan.JPG> Bigot."},
+{searchString: "Al Gore", explanationText: "<img src=https://i.postimg.cc/N0dzKYrj/gore10d.avif> Had the presidency stolen from him."},
+{searchString: "Gore", explanationText: "<img src=https://i.postimg.cc/N0dzKYrj/gore10d.avif> Had the presidency stolen from him."},
+{searchString: "Jason Sudeikis", explanationText: "<img src=https://i.postimg.cc/jqwFSpqf/WK-AO070-YR-TV1-DV-20081224122751.jpg> Played me on SNL. Funny as shit."},
+{searchString: "Ron Paul", explanationText: "<img src=https://i.postimg.cc/TYvCYh4x/Ron-Paul-2007.webp> Liberty VS Liberalism. Who would win?"},
+
+];
+
+
 
 class Song {
 	constructor(title, artist, coverLink, audioLink) {
@@ -1225,34 +1343,7 @@ setupMusicPlayer();
 addDynamicCSS();
 
 tooltipList = [
-{searchString: "Hillary Clinton", explanationText: "<img src=https://i.postimg.cc/NGnGTKn3/IMG-9626.jpg> My main challenger. I hope we can prevent the Clinton’s comeback."},
-{searchString: "George W. Bush", explanationText: "<img src=https://i.postimg.cc/nLTpLr75/IMG-9627.webp> President Dubya. One of the worst in history."}, 
-{searchString: "Dubya", explanationText: "<img src=https://i.postimg.cc/nLTpLr75/IMG-9627.webp> President George W. Bush. One of the worst in history."}, 
-{searchString: "Dick Cheney", explanationText: "<img src=https://i.postimg.cc/02m6yGQ1/IMG-9628.webp> A war criminal at his very worst."},
-{searchString: "Cheney", explanationText: "<img src=https://i.postimg.cc/02m6yGQ1/IMG-9628.webp> A war criminal at his very worst."},
-{searchString: "John McCain", explanationText: "<img src=https://i.postimg.cc/BZPbm52H/IMG-9629.webp> One of my best friends, and now he’s my rival in the election."},
-{searchString: "McCain", explanationText: "<img src=https://i.postimg.cc/BZPbm52H/IMG-9629.webp> One of my best friends, and now he’s my rival in the election."},
-{searchString: "Beau", explanationText: "<img src=https://i.postimg.cc/L89HFjgC/IMG-9630.webp> Following in my footsteps in politics. Definitely makes me a proud father."},
-{searchString: "Beau Biden", explanationText: "<img src=https://i.postimg.cc/L89HFjgC/IMG-9630.webp> Following in my footsteps in politics. Definitely makes me a proud father."},
-{searchString: "Chuck Graham", explanationText: "<img src=https://i.postimg.cc/j2Ybgfr6/IMG-9631.webp> ''Stand up, Chuck. Let ‘em see ya!''"},
-{searchString: "Ted Kennedy", explanationText: "<img src=https://i.postimg.cc/nrJyYtvq/IMG-9641.webp> A true veteran in the Senate."},
-{searchString: "Kennedy", explanationText: "<img src=https://i.postimg.cc/nrJyYtvq/IMG-9641.webp> A true veteran in the Senate."},
-{searchString: "Jill Biden", explanationText: "<img src=https://i.postimg.cc/kgpLYSQQ/IMG-9642.webp> Can’t take my eyes off of her."},
-{searchString: "Jill", explanationText: "<img src=https://i.postimg.cc/kgpLYSQQ/IMG-9642.webp> Can’t take my eyes off of her."},
-{searchString: "Joe Lieberman", explanationText: "<img src=https://i.postimg.cc/63NjFfy6/IMG-9646.webp> McCain’s husband."},
-{searchString: "Lieberman", explanationText: "<img src=https://i.postimg.cc/63NjFfy6/IMG-9646.webp> McCain’s husband."},
-{searchString: "Bill Clinton", explanationText: "<img src=https://i.postimg.cc/4xDBhQvx/IMG-9770.webp> President Bubba. I voted to acquit him after being unfaithful to Hillary, and I have no regrets."},
-{searchString: "Tim Pawlenty", explanationText: "<img src=https://i.postimg.cc/GpPJTwmR/IMG-9775.webp> Complete idiot."},
-{searchString: "Pawlenty", explanationText: "<img src=https://i.postimg.cc/GpPJTwmR/IMG-9775.webp> Complete idiot."},
-{searchString: "Barack Obama", explanationText: "<img src=https://i.postimg.cc/DwkXrjNH/IMG-9787.webp> Articulate, bright, clean and a nice-looking guy, that's a storybook, man!"},
-{searchString: "Obama", explanationText: "<img src=https://i.postimg.cc/DwkXrjNH/IMG-9787.webp> Articulate, bright, clean and a nice-looking guy, that's a storybook, man!"},
-{searchString: "Kathleen Sebelius", explanationText: "<img src=https://i.postimg.cc/ZqYFNsBq/IMG-9795.webp> Bipartisanship as a person."},
-{searchString: "Sebelius", explanationText: "<img src=https://i.postimg.cc/ZqYFNsBq/IMG-9795.webp> Bipartisanship as a person."},
-{searchString: "Evan Bayh", explanationText: "<img src=https://i.postimg.cc/ydgRhMV7/IMG-9796.webp> Works his damn hardest on that floor, and I respect that."},
-{searchString: "Bayh", explanationText: "<img src=https://i.postimg.cc/ydgRhMV7/IMG-9796.webp> Works his damn hardest on that floor, and I respect that."},
-{searchString: "Tim Kaine", explanationText: "<img src=https://i.postimg.cc/Y9W4LQ3p/IMG-9797.webp> Virginia needed him, now I need him."},
-{searchString: "Kaine", explanationText: "<img src=https://i.postimg.cc/Y9W4LQ3p/IMG-9797.webp> Virginia needed him, now I need him."},
-{searchString: "Ted Strickland", explanationText: "<img src=https://i.postimg.cc/CLNR8hjQ/IMG-9988.webp> Governor of Ohio. He’s a strong campaigner, as we saw in 2006."},
+{searchString: "no more tooltips", explanationText: "<img src=https://i.postimg.cc/NGnGTKn3/IMG-9626.jpg> My main challenger. I hope we can prevent the Clinton’s comeback."},
             
 ];
 
