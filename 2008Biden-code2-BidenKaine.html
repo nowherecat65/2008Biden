@@ -699,7 +699,7 @@ campaignTrail_temp.answers_json = [
         "pk": 12954,
         "fields": {
             "question": 356,
-            "description": "Well, damn! What can I say? Restrictions NEED to be made for same-sex marriage. It’s unacceptable and frankly malarkey that we allow these weirdos to freely violate the will of God!"
+            "description": "Well, damn! What can I say? Restrictions NEED to be made for same-sex marriage. It’s unacceptable and frankly a bunch of uh-malarkey that we allow these weirdos to freely violate the will of God!"
         }
     },
     {
@@ -7541,7 +7541,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12954,
             "candidate": 78,
             "affected_candidate": 78,
-            "global_multiplier": -0.0165
+            "global_multiplier": -0.0215
         }
     },
     {
@@ -7561,7 +7561,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 12954,
             "candidate": 78,
             "affected_candidate": 79,
-            "global_multiplier": 0.0225
+            "global_multiplier": 0.02375
         }
     },
     {
@@ -9263,7 +9263,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 3359,
             "issue": 30,
-            "issue_score": 0.06,
+            "issue_score": 0.19,
             "issue_importance": 1.5
         }
     },
@@ -9273,7 +9273,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 3362,
             "issue": 30,
-            "issue_score": 0.47,
+            "issue_score": 0.67,
             "issue_importance": 1.75
         }
     },
@@ -9283,7 +9283,7 @@ campaignTrail_temp.answer_score_issue_json = [
         "fields": {
             "answer": 12954,
             "issue": 30,
-            "issue_score": -0.42,
+            "issue_score": -0.55,
             "issue_importance": 1.5
         }
     },
@@ -27843,8 +27843,6 @@ const _patchVPDebateQ360 = (vp) => {
     let out = s;
 
     out = out.replace(/\bTim Kaine\b/g, full);
-
-    out = out.replace(/\bKaine\b/g, `Governor ${last}`);
 
     out = out.replace(/\bKaine\b/g, last);
 
